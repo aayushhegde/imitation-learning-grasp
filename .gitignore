@@ -1,3 +1,7 @@
+## Chinese working files (marked with "ZH" in the filename) — kept out of the shared repo.
+## Matches "ZH" anywhere in a file or directory name, at any depth. Case-sensitive.
+*ZH*
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
