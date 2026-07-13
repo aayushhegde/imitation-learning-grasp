@@ -2,6 +2,10 @@
 ## Matches "ZH" anywhere in a file or directory name, at any depth. Case-sensitive.
 *ZH*
 
+## OS / Python junk:
+.DS_Store
+__pycache__/
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
