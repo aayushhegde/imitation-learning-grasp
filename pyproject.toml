@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ilgrasp"
+version = "0.1.0"
+description = "Imitation learning for parallel-jaw grasping"
+requires-python = ">=3.11"
+dependencies = [
+    "gymnasium==1.3.0",
+    "panda-gym==3.0.7",
+    "numpy",
+    "torch",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ilgrasp"]
