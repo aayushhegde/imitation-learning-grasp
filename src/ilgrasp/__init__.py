@@ -1,18 +1,10 @@
-"""ilgrasp — imitation learning for parallel-jaw grasping."""
+"""Teaching-first imitation learning for simulated robotic grasping."""
 
-from ilgrasp.env import GraspEnv, flatten_obs
-from ilgrasp.constants import (
-    OBS_DIM,
-    ACTION_DIM,
-    OBJ_POS_SLICE,
-    MAX_EPISODE_STEPS,
-)
+__version__ = "0.1.0"
 
-__all__ = [
-    "GraspEnv",
-    "flatten_obs",
-    "OBS_DIM",
-    "ACTION_DIM",
-    "OBJ_POS_SLICE",
-    "MAX_EPISODE_STEPS",
-]
+# Re-exported so notebooks/01_simulator_environment.ipynb keeps working after
+# src/ilgrasp/env.py and src/ilgrasp/constants.py are removed. These are now
+# thin aliases: there is exactly one GraspEnv and one flatten_obs in the tree.
+from ilgrasp.sim import ACTION_DIM, OBS_DIM, GraspEnv, flatten_obs
+
+__all__ = ["ACTION_DIM", "GraspEnv", "OBS_DIM", "flatten_obs"]

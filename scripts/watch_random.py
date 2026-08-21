@@ -1,8 +1,9 @@
 """Renders the PandaPickAndPlace-v3 environment in a window and steps it with random actions for 200 steps so the robot arm's motion can be watched live."""
 
-import gymnasium as gym
-import panda_gym
 import time
+
+import gymnasium as gym
+import panda_gym  # noqa: F401 -- import registers Panda environments
 
 #gymnasism is the framework for an agent making an environment - interface that simulators use
 #panda_gym is the environment that a robot arm uses in trainng

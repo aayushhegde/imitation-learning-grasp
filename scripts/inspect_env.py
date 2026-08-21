@@ -1,7 +1,7 @@
 """Resets the PandaPickAndPlace-v3 gym environment once and prints its observation keys/values and a sample action, to inspect the env's I/O shape."""
 
 import gymnasium as gym
-import panda_gym
+import panda_gym  # noqa: F401 -- import registers Panda environments
 
 env = gym.make("PandaPickAndPlace-v3")
 obs, info = env.reset()
