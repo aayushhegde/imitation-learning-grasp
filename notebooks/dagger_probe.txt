@@ -1,0 +1,248 @@
+========================================================================
+0. MODULE INVENTORY — so I stop guessing symbol names
+========================================================================
+
+expert -> module __main__
+  public names: Any, BarrierPickPlaceExpert, ControlDecision, Counter, DataLoader, EVAL_EPISODES, EXPERT_BENCHMARK_EPISODES, Enum, Episode, ExpertAsFlatPolicy, ExpertConfig, ExpertFlatControl, ExpertMemory, ExpertPhase, ExpertTrace, F, FIXED_EVAL_EPISODES, FIXED_EVAL_SEED_START, FIXED_PHASES, FIXED_PHASE_TO_ID, FIXED_TRAIN_EPOCHS, HybridNumpyPolicy, HybridPolicy, HybridTrainResult, In, NotebookImage, OUT, Out, PICK_PHASES, PROJECT_ROOT, Path, Phase, QUICK_MODE, RecurrentHybridPolicy, RecurrentNumpyPolicy, RecurrentTrainResult, RobotState, StrictEvaluation, TARGET_DEMOS, TRAIN_EPOCHS, TRANSPORT_PHASES, TensorDataset, TrainingData, VerifiedDemoStore, VerifiedPlacementEnv, a, act, act_e, act_l, action, advance_phase, animation_path, annotations, arrived, ax, axes, base, benchmark_env, benchmark_successes, benchmark_traces, big, bins, bounded_move_action, buf, candidates, classify_failure, clearances, collect_trace, collection_seed, comparison, controller_decision, counter_env, counts, d, data, data_env, dataclass, decoded, deepcopy, display, dist, e, env, episode_rows, evaluate_strict, evaluation, ex, exit, expert, expert_control, expert_env, failures, field, fig, final_info, finish_decision, fixed_evaluation, fixed_expert_control, fixed_policy, fixed_trained, g_stall, gc, get_ipython, goal, hi, hybrid_bc_loss, info, inspect, io, j, json, k, label, labels, leaked, learned_policy, legacy_fixed_seeds, lengths, lo, load_verified_training_data, m, m_stall, max_collection_attempts, mod, model, n, name, native_rate, nn, np, o, obj, object_id, obs, obs_e, obs_l, obs_val, open, original, os, pad_sequence, phase_counts, phase_sample_weights, phases, phases_val, pick_decision, plt, pol, pre, pred_motion, preview, quit, random, re, record_verified_expert_gif, relative_features, required_phases, rollout, seed, split_episode_ids, sqlite3, sqrt, stall, store, strict_ci, strict_rate, strict_rates, successful_demos, sys, tempfile, terminated, test_env, textwrap, to_cube, torch, tr, trace, train_hybrid, train_recurrent_hybrid, trained, transport_decision, true_motion, truncated, tutorial_dir, unit, v, val_mask, w, wilson, x_val, xy_pred, xy_true, zero_w
+
+env: not in globals
+
+========================================================================
+1. THE CONTROL LAW
+========================================================================
+
+--- controller_decision ---
+def controller_decision(
+    state: RobotState, memory: ExpertMemory, cfg: ExpertConfig
+) -> ControlDecision:
+    if memory.phase in PICK_PHASES:
+        return pick_decision(memory.phase, state, memory, cfg)
+    if memory.phase in TRANSPORT_PHASES:
+        return transport_decision(memory.phase, state, memory, cfg)
+    return finish_decision(memory.phase, state, memory, cfg)
+
+
+--- advance_phase ---
+def advance_phase(state: RobotState, memory: ExpertMemory, cfg: ExpertConfig) -> None:
+    p = memory.phase
+
+    def switch(next_phase: ExpertPhase) -> None:
+        memory.phase = next_phase
+        memory.phase_steps = 0
+
+    if p is ExpertPhase.APPROACH:
+        target = state.obj + [0, 0, cfg.hover_height]
+        if arrived(state.ee, target, cfg.position_tolerance):
+            switch(ExpertPhase.DESCEND)
+    elif p is ExpertPhase.DESCEND:
+        target = state.obj + [0, 0, cfg.grasp_offset]
+        if arrived(state.ee, target, cfg.position_tolerance):
+            memory.grasp_offset = state.ee - state.obj
+            memory.grasp_target = state.ee.copy()
+            switch(ExpertPhase.CLOSE)
+    elif p is ExpertPhase.CLOSE and memory.phase_steps >= cfg.close_steps:
+        switch(ExpertPhase.TEST_GRASP)
+    elif p is ExpertPhase.TEST_GRASP:
+        if state.obj[2] > 0.05:
+            switch(ExpertPhase.LIFT_CLEAR)
+        elif memory.phase_steps >= cfg.test_timeout:
+            memory.retries += 1
+            memory.grasp_target = None
+            switch(ExpertPhase.APPROACH)
+    elif p is ExpertPhase.LIFT_CLEAR and abs(state.ee[2] - cfg.safe_z) < cfg.position_tolerance:
+        switch(ExpertPhase.PRE_CROSS)
+    elif p is ExpertPhase.PRE_CROSS:
+        target = np.array([state.goal[0], cfg.pre_cross_y, cfg.safe_z])
+        if arrived(state.ee, target, cfg.position_tolerance):
+            switch(ExpertPhase.CROSS_BARRIER)
+    elif p is ExpertPhase.CROSS_BARRIER:
+        target = np.array([state.goal[0], cfg.post_cross_y, cfg.safe_z])
+        if arrived(state.ee, target, cfg.position_tolerance):
+            switch(ExpertPhase.ABOVE_GOAL)
+    elif p is ExpertPhase.ABOVE_GOAL:
+        target = np.array([state.goal[0], state.goal[1], cfg.safe_z])
+        if arrived(state.ee, target, cfg.position_tolerance):
+            switch(ExpertPhase.LOWER)
+    elif p is ExpertPhase.LOWER and np.linalg.norm(state.obj - state.goal) < cfg.place_tolerance:
+        memory.release_target = state.goal + memory.grasp_offset
+        switch(ExpertPhase.OPEN)
+    elif p is ExpertPhase.OPEN and memory.phase_steps >= cfg.open_steps:
+        switch(ExpertPhase.RETREAT_UP)
+    elif p is ExpertPhase.RETREAT_UP and abs(state.ee[2] - cfg.safe_z) < cfg.position_tolerance:
+        switch(ExpertPhase.RETREAT_HOME)
+    elif p is ExpertPhase.RETREAT_HOME and arrived(state.ee, np.asarray(cfg.home), 0.025):
+        switch(ExpertPhase.VERIFY)
+
+
+--- bounded_move_action ---
+def bounded_move_action(
+    ee: np.ndarray, target: np.ndarray, gripper: float, gain: float = 20.0
+) -> np.ndarray:
+    """E02: return [dx, dy, dz, gripper] as clipped float32."""
+    ee = np.asarray(ee, dtype=np.float32)
+    target = np.asarray(target, dtype=np.float32)
+    if ee.shape != (3,) or target.shape != (3,):
+        raise ValueError(f"Expected ee and target to be shape (3,), got {ee.shape} and {target.shape}")
+    if not np.all(np.isfinite(ee)) or not np.all(np.isfinite(target)):
+        raise ValueError("ee and target contain non-finite values.")
+
+    xyz = np.clip(gain * (target - ee), -1.0, 1.0)
+    return np.r_[xyz, np.clip(gripper, -1.0, 1.0)].astype(np.float32)
+
+
+--- pick_decision ---
+def pick_decision(
+    phase: ExpertPhase, state: RobotState, memory: ExpertMemory, cfg: ExpertConfig
+) -> ControlDecision:
+    if phase is ExpertPhase.APPROACH:
+        return ControlDecision(state.obj + [0, 0, cfg.hover_height], +1.0)
+    if phase is ExpertPhase.DESCEND:
+        return ControlDecision(state.obj + [0, 0, cfg.grasp_offset], +1.0)
+    if phase is ExpertPhase.CLOSE:
+        if memory.grasp_target is None:
+            raise RuntimeError("CLOSE requires a frozen grasp_target")
+        return ControlDecision(memory.grasp_target, -1.0)
+    if phase is ExpertPhase.TEST_GRASP:
+        if memory.grasp_target is None:
+            raise RuntimeError("TEST_GRASP requires grasp_target")
+        return ControlDecision(memory.grasp_target + [0, 0, cfg.test_lift], -1.0)
+    raise ValueError(f"Not a pick phase: {phase}")
+
+
+--- transport_decision ---
+def transport_decision(
+    phase: ExpertPhase, state: RobotState, memory: ExpertMemory, cfg: ExpertConfig
+) -> ControlDecision:
+    if phase is ExpertPhase.LIFT_CLEAR:
+        target = np.array([state.ee[0], state.ee[1], cfg.safe_z])
+    elif phase is ExpertPhase.PRE_CROSS:
+        target = np.array([state.goal[0], cfg.pre_cross_y, cfg.safe_z])
+    elif phase is ExpertPhase.CROSS_BARRIER:
+        target = np.array([state.goal[0], cfg.post_cross_y, cfg.safe_z])
+    elif phase is ExpertPhase.ABOVE_GOAL:
+        target = np.array([state.goal[0], state.goal[1], cfg.safe_z])
+    else:
+        raise ValueError(f"Not a transport phase: {phase}")
+    return ControlDecision(target, -1.0)
+
+
+--- finish_decision ---
+def finish_decision(
+    phase: ExpertPhase, state: RobotState, memory: ExpertMemory, cfg: ExpertConfig
+) -> ControlDecision:
+    if phase is ExpertPhase.LOWER:
+        return ControlDecision(state.goal + memory.grasp_offset, -1.0)
+    if phase is ExpertPhase.OPEN:
+        target = memory.release_target
+        if target is None:
+            raise RuntimeError("OPEN requires release_target")
+        return ControlDecision(target, +1.0)
+    if phase is ExpertPhase.RETREAT_UP:
+        return ControlDecision(np.array([state.ee[0], state.ee[1], cfg.safe_z]), +1.0)
+    if phase in {ExpertPhase.RETREAT_HOME, ExpertPhase.VERIFY}:
+        return ControlDecision(np.asarray(cfg.home), +1.0)
+    raise ValueError(f"Not a finish phase: {phase}")
+
+
+========================================================================
+2. MEMORY — the hidden state the oracle has to reconstruct
+========================================================================
+
+memory class: ExpertMemory from __main__
+
+--- ExpertMemory: source unavailable (source code not available) ---
+
+live field values after your last run:
+  phase                    <ExpertPhase.VERIFY: 'verify'>   (ExpertPhase)
+  phase_steps              5   (int)
+  retries                  0   (int)
+  grasp_offset             array([-0.002,  0.   ,  0.008], dtype=float32)   (ndarray)
+  grasp_target             array([ 0.02 , -0.155,  0.028], dtype=float32)   (ndarray)
+  release_target           array([0.047, 0.162, 0.028], dtype=float32)   (ndarray)
+
+========================================================================
+3. PHASE ENUM
+========================================================================
+
+ExpertPhase from __main__
+  0  APPROACH               = 'approach'
+  1  DESCEND                = 'descend'
+  2  CLOSE                  = 'close'
+  3  TEST_GRASP             = 'test_grasp'
+  4  LIFT_CLEAR             = 'lift_clear'
+  5  PRE_CROSS              = 'pre_cross'
+  6  CROSS_BARRIER          = 'cross_barrier'
+  7  ABOVE_GOAL             = 'above_goal'
+  8  LOWER                  = 'lower'
+  9  OPEN                   = 'open'
+ 10  RETREAT_UP             = 'retreat_up'
+ 11  RETREAT_HOME           = 'retreat_home'
+ 12  VERIFY                 = 'verify'
+
+MARK BY HAND: which of these are fixed-duration (six of thirteen).
+
+========================================================================
+4. ROBOT STATE — what the controller consumes
+========================================================================
+
+--- RobotState: source unavailable (source code not available) ---
+
+========================================================================
+5. EXPERT CONFIG — live values
+========================================================================
+
+ExpertConfig live values:
+  hover_height                 0.12
+  grasp_offset                 0.015
+  test_lift                    0.045
+  safe_z                       0.17
+  pre_cross_y                  -0.075
+  post_cross_y                 0.075
+  position_tolerance           0.018
+  place_tolerance              0.035
+  gain                         20.0
+  close_steps                  10
+  open_steps                   12
+  test_timeout                 18
+  home                         (0.04, 0.0, 0.2)
+
+========================================================================
+6. OBSERVATION AND FAILURE TAXONOMY
+========================================================================
+
+--- flatten_obs: NOT FOUND ---
+
+--- classify_failure ---
+def classify_failure(info: dict[str, Any]) -> str:
+    """Classify the earliest missing lifecycle milestone from the environment contract."""
+    if info["strict_success"]:
+        return "success"
+    if info["barrier_violation"]:
+        return "barrier_collision"
+    if not info["ever_lifted"]:
+        return "grasp_failed"
+    if not info["ever_crossed"]:
+        return "dropped_before_barrier"
+    if not info["ever_released"]:
+        return "not_released"
+    if not info["retreated"]:
+        return "no_retreat"
+    if info["stable_steps"] < info["required_stable_steps"]:
+        return "unstable_placement"
+    return "inconsistent_certificate"
+
+
+========================================================================
+7. ENV API
+========================================================================
+env not in globals
+
+========================================================================
+8. POLICY AND TRAINING
+========================================================================
+load_verified_training_data(connection: 'sqlite3.Connection', max_episodes: 'int') -> 'TrainingData'
+collect_trace(env: 'VerifiedPlacementEnv', expert: 'BarrierPickPlaceExpert', seed: 'int') -> 'ExpertTrace'
+
+========================================================================
+9. DETERMINISM
+========================================================================
