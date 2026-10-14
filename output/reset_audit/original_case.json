@@ -1,0 +1,26 @@
+{
+  "reference_commands": 73,
+  "reused": {
+    "reset_identical": true,
+    "identical": false,
+    "first_divergent_step": 1,
+    "max_abs_obs_diff": 30.68442153930664,
+    "max_abs_object_pos_diff_m": 0.0021054944954812527,
+    "length_ref": 73,
+    "length_run": 73,
+    "strict_ref": true,
+    "strict_run": true
+  },
+  "rebuilt": {
+    "reset_identical": true,
+    "identical": true,
+    "first_divergent_step": null,
+    "max_abs_obs_diff": 0.0,
+    "max_abs_object_pos_diff_m": 0.0,
+    "length_ref": 73,
+    "length_run": 73,
+    "strict_ref": true,
+    "strict_run": true
+  },
+  "two_fresh_clients_identical": true
+}

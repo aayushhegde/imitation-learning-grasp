@@ -1,0 +1,28 @@
+scenario,expected,seed,steps,strict_success,native_goal_seen,lift,cross,release,retreat_final,max_stable_steps,counter_resets,collision,static_body_contacts,contact_step,contact_body_link,contact_after_crossing
+control,accepted,7,73,True,True,True,True,True,True,12,0,False,0,,,
+control,accepted,8,72,True,True,True,True,True,True,12,0,False,0,,,
+control,accepted,9,76,True,True,True,True,True,True,12,0,False,0,,,
+gripper_never_closes,rejected: lift,7,180,False,False,False,False,False,False,0,0,False,0,,,
+gripper_never_closes,rejected: lift,8,180,False,False,False,False,False,False,0,0,False,0,,,
+gripper_never_closes,rejected: lift,9,180,False,False,False,False,False,False,0,0,False,0,,,
+hold_after_lift,rejected: crossing,7,180,False,False,True,False,False,False,0,0,False,0,,,
+hold_after_lift,rejected: crossing,8,180,False,False,True,False,False,False,0,0,False,0,,,
+hold_after_lift,rejected: crossing,9,180,False,False,True,False,False,False,0,0,False,0,,,
+gripper_kept_closed_at_goal,rejected: release,7,180,False,True,True,True,False,False,0,0,False,0,,,
+gripper_kept_closed_at_goal,rejected: release,8,180,False,True,True,True,False,False,0,0,False,0,,,
+gripper_kept_closed_at_goal,rejected: release,9,180,False,True,True,True,False,False,0,0,False,0,,,
+open_but_no_retreat,rejected: retreat,7,180,False,True,True,True,True,False,0,0,False,0,,,
+open_but_no_retreat,rejected: retreat,8,180,False,True,True,True,True,False,0,0,False,0,,,
+open_but_no_retreat,rejected: retreat,9,180,False,True,True,True,True,False,0,0,False,0,,,
+cube_displaced_after_release,rejected: stability (cube leaves target),7,180,False,True,True,True,True,True,0,0,False,0,,,
+cube_displaced_after_release,rejected: stability (cube leaves target),8,180,False,True,True,True,True,True,0,0,False,0,,,
+cube_displaced_after_release,rejected: stability (cube leaves target),9,180,False,True,True,True,True,True,0,0,False,0,,,
+regrasp_after_counter_started,rejected: stability counter resets,7,180,False,True,True,True,True,False,6,1,False,0,,,
+regrasp_after_counter_started,rejected: stability counter resets,8,180,False,True,True,True,True,False,6,1,False,0,,,
+regrasp_after_counter_started,rejected: stability counter resets,9,180,False,True,True,True,True,False,6,1,False,0,,,
+low_crossing_contact_before_crossing,rejected: collision,7,180,False,False,True,True,False,False,0,0,True,0,39,object,False
+low_crossing_contact_before_crossing,rejected: collision,8,180,False,False,True,False,False,False,0,0,True,0,32,panda:panda_rightfinger,False
+low_crossing_contact_before_crossing,rejected: collision,9,180,False,False,True,False,False,False,0,0,True,0,41,object,False
+robot_contact_after_crossing,rejected: collision only,7,180,False,True,True,True,True,True,97,1,True,0,68,panda:panda_leftfinger,True
+robot_contact_after_crossing,rejected: collision only,8,180,False,True,True,True,True,True,97,1,True,0,68,panda:panda_leftfinger,True
+robot_contact_after_crossing,rejected: collision only,9,180,False,True,True,True,True,True,93,1,True,0,72,panda:panda_leftfinger,True
