@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ilgrasp"
+version = "0.1.0"
+description = "A teaching-first imitation-learning pipeline for Panda pick-and-place"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+  "gymnasium>=0.29,<2",
+  "matplotlib>=3.8",
+  "numpy>=1.26",
+  "panda-gym>=3.0",
+  "pandas>=2.1",
+  "pillow>=10",
+  "torch>=2.2",
+]
+
+[project.optional-dependencies]
+notebook = ["ipykernel>=6.29", "jupyterlab>=4", "nbformat>=5.9"]
+dev = ["pytest>=8", "ruff>=0.5"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

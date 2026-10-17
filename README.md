@@ -30,3 +30,23 @@ python scripts/paired_statistics.py
 
 The saved outputs in `output/monitor_checks/` and `output/reset_audit/` come from macOS 13.4
 (ARM64) with Python 3.11.15, PyBullet 3.2.7, NumPy 1.26.4, Gymnasium 1.3.0, and panda-gym 3.0.7.
+
+## Original study records
+
+`study_records/` holds the files from the runs reported in the paper, as prepared by the study
+mentor on 2026-10-16. Start with `study_records/README_START_HERE.md` and
+`study_records/REVIEWER_DETAILS.md`.
+
+- `imitation-learning-grasp/`: the source snapshot used for the reported runs, including the
+  recovery oracle (`src/ilgrasp/experts/recovery.py`), the study and aggregation scripts, tests, and
+  `artifacts/revision_study/` (demonstrations, checkpoints, run manifests, logs, per-scene results,
+  and per-step trajectories for every held-out suite)
+- `derived_tables/`: CSV copies of the held-out scene records and the paired aggregation comparison
+- `new_diagnostic_2026-10-16/`: a separately labeled replay of the oracle validation that records
+  perturbation steps and memory comparisons; it is not part of the original logs
+- `PACKAGE_SHA256.json`: a checksum for every file (`python3 study_records/verify_package.py`)
+
+The original runs used a conda-forge environment (Python 3.12.13, PyTorch 2.13.0, NumPy 2.5.2,
+Gymnasium 1.3.0, panda-gym 3.0.7, PyBullet 3.2.5) whose versions are recorded in every run
+manifest. Some manifests still contain the original machine's absolute paths. Do not rerun the
+original scripts into `artifacts/revision_study/`, because some modes overwrite their outputs.

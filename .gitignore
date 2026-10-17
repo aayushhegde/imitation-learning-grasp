@@ -323,3 +323,6 @@ __pycache__/
 
 ## Python packaging build artifacts
 *.egg-info/
+
+# Original study records for the AJSR revision (keep every file, including logs)
+!study_records/**

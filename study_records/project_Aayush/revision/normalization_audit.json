@@ -1,0 +1,754 @@
+{
+  "dataset_sha256": "14f4d294cdd82d251f5a7922839ba66ef965174a0782abdb0097849ecd08df7b",
+  "train_ids": [
+    1,
+    3,
+    6,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    36,
+    37,
+    38,
+    39,
+    40,
+    42,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    56,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    66,
+    67,
+    68,
+    69,
+    70,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    79,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    101,
+    102,
+    104,
+    105,
+    106,
+    107,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    116,
+    118,
+    119,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    141,
+    142,
+    143,
+    146,
+    147,
+    148,
+    149,
+    150,
+    152,
+    153,
+    154,
+    155,
+    157,
+    158,
+    161,
+    162,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199
+  ],
+  "training_rows": 11869,
+  "legacy_std_floor": 1e-06,
+  "comparison_std_floor": 0.05,
+  "statistic_precision": "NumPy float64 population moments of float32 policy features",
+  "scope": "Same saved development observations re-expressed under two normalizations; no new policy outcomes",
+  "conditions": [
+    {
+      "trace_condition": "gru33_floor_s0_traces_30000_24",
+      "feature_count": 33,
+      "episodes": 24,
+      "steps": 1753,
+      "legacy_max_absolute_z": 46.22705300427589,
+      "floor_max_absolute_z": 27.34441644355655,
+      "legacy_q99_absolute_z": 3.6437653718096716,
+      "floor_q99_absolute_z": 2.784146550240684,
+      "legacy_steps_with_max_z_above100": 0,
+      "floor_steps_with_max_z_above100": 0,
+      "extreme_feature": "object_yaw",
+      "extreme_training_std": 0.009785513059564169,
+      "top_features_by_legacy_max": [
+        "object_yaw",
+        "object_wz",
+        "object_wx",
+        "object_wy",
+        "object_minus_ee_x",
+        "object_roll",
+        "object_vx",
+        "ee_vx"
+      ],
+      "per_episode": [
+        {
+          "filename": "30000.npz",
+          "sha256": "b83352b778bedc9f6d703dc7b8dab2a27201b3c0cbbd6ef54338954422b52a82",
+          "steps": 72,
+          "legacy_max_absolute_z": 5.0323766929817735,
+          "floor_max_absolute_z": 5.0323766929817735
+        },
+        {
+          "filename": "30001.npz",
+          "sha256": "5a80ba934b373f5ea5effc6c3b2b40862afe5145288d8498ded1f88426bc0ba5",
+          "steps": 73,
+          "legacy_max_absolute_z": 14.9281570442261,
+          "floor_max_absolute_z": 5.724188773919759
+        },
+        {
+          "filename": "30002.npz",
+          "sha256": "886f1ac6cd94a1d4cd1fc2981ed2beb8557bb9a0c2a2611adb0999bc6b538503",
+          "steps": 72,
+          "legacy_max_absolute_z": 10.069031990135205,
+          "floor_max_absolute_z": 8.499683875102495
+        },
+        {
+          "filename": "30003.npz",
+          "sha256": "64b04ca3ee026195b5edb3176f4966e3a09cba4dba211fcc3bef7de34638d6a1",
+          "steps": 76,
+          "legacy_max_absolute_z": 5.211531030283472,
+          "floor_max_absolute_z": 4.102135611811332
+        },
+        {
+          "filename": "30004.npz",
+          "sha256": "0ef6e6ef76f7fc25b28ff981c15ff59153321bbf0654ad2f54ff8c6eca34a64b",
+          "steps": 72,
+          "legacy_max_absolute_z": 46.22705300427589,
+          "floor_max_absolute_z": 16.776882880121473
+        },
+        {
+          "filename": "30005.npz",
+          "sha256": "d8dc3726628bd10d74c1ef623223cd0cc00582636568a6a3671982bacaca6efb",
+          "steps": 72,
+          "legacy_max_absolute_z": 5.024125698201029,
+          "floor_max_absolute_z": 5.024125698201029
+        },
+        {
+          "filename": "30006.npz",
+          "sha256": "99e011673245203aaade4ac609d4ff818e27df499c5b9a0a6be8e597e8dad811",
+          "steps": 70,
+          "legacy_max_absolute_z": 8.464120216009007,
+          "floor_max_absolute_z": 5.222573246188603
+        },
+        {
+          "filename": "30007.npz",
+          "sha256": "d1d8a1722fc134e11543178e13896fe47e0d2ff5e64faab4b90d7db8d46dbeac",
+          "steps": 72,
+          "legacy_max_absolute_z": 23.189551844655426,
+          "floor_max_absolute_z": 23.189551844655426
+        },
+        {
+          "filename": "30008.npz",
+          "sha256": "a9776ce2b71b29c2591ee949dd9a03ea8e233d0b54e1f77f91527982c74d34c6",
+          "steps": 76,
+          "legacy_max_absolute_z": 21.342220786687285,
+          "floor_max_absolute_z": 21.342220786687285
+        },
+        {
+          "filename": "30009.npz",
+          "sha256": "36d797f8308e4a2954a959ae4054a5d73fa8322fb38d9b19ab6d393a0b392886",
+          "steps": 71,
+          "legacy_max_absolute_z": 5.399486031263919,
+          "floor_max_absolute_z": 5.039265889776555
+        },
+        {
+          "filename": "30010.npz",
+          "sha256": "53290b155e45468e15d4ccdc248e698cd4cda26d8d6d4170176de0c3b4afb6bc",
+          "steps": 72,
+          "legacy_max_absolute_z": 7.8905157388788,
+          "floor_max_absolute_z": 7.239151058295464
+        },
+        {
+          "filename": "30011.npz",
+          "sha256": "187e91cd77ed2264100361e1f67633e1ccbdfa10e3abf6eea6ee79b225adfa42",
+          "steps": 72,
+          "legacy_max_absolute_z": 5.019636978293577,
+          "floor_max_absolute_z": 5.019636978293577
+        },
+        {
+          "filename": "30012.npz",
+          "sha256": "b6cf03cca13c0fd359f58f440039eb470ec15c842937eed629ed3efd4a5cf6e2",
+          "steps": 73,
+          "legacy_max_absolute_z": 4.596330624117119,
+          "floor_max_absolute_z": 4.329680533781088
+        },
+        {
+          "filename": "30013.npz",
+          "sha256": "47cdb199da7721cc9940cda7b6b7736909872c067ada0210541ae6b66850913d",
+          "steps": 70,
+          "legacy_max_absolute_z": 6.074555349058177,
+          "floor_max_absolute_z": 5.106630489852863
+        },
+        {
+          "filename": "30014.npz",
+          "sha256": "141bb9a30174971abe1cde9a098f146a71d5ca0acace9e2d9f499d9dc491ce58",
+          "steps": 77,
+          "legacy_max_absolute_z": 8.418793214614578,
+          "floor_max_absolute_z": 4.161040439768777
+        },
+        {
+          "filename": "30015.npz",
+          "sha256": "fe7552a2bd5aca1a7d68073e774ad8c03b12b2484623ca34a3d8ce5cded94909",
+          "steps": 74,
+          "legacy_max_absolute_z": 5.077024784506244,
+          "floor_max_absolute_z": 4.392765316256094
+        },
+        {
+          "filename": "30016.npz",
+          "sha256": "6c0c772ff399fada7ff2573e3243df18899bc0bce3c4633f8fa93fc079d945fb",
+          "steps": 74,
+          "legacy_max_absolute_z": 25.86750005766365,
+          "floor_max_absolute_z": 25.86750005766365
+        },
+        {
+          "filename": "30017.npz",
+          "sha256": "1ba8d3287e90fbccedcdccbff6decc00d2d0efe44d5920b11904f85e04c31f52",
+          "steps": 73,
+          "legacy_max_absolute_z": 7.395851296982971,
+          "floor_max_absolute_z": 4.3639962729039965
+        },
+        {
+          "filename": "30018.npz",
+          "sha256": "bd6c94b59f2dc0d35a3beecf36225348649132ad88d10b4251c2021c4280c7cd",
+          "steps": 76,
+          "legacy_max_absolute_z": 5.858789929398853,
+          "floor_max_absolute_z": 4.076771238557686
+        },
+        {
+          "filename": "30019.npz",
+          "sha256": "2aef9531538a1233b18c38e722ea14ded72da84e2a094dd4c70a488bf97da63d",
+          "steps": 74,
+          "legacy_max_absolute_z": 15.130386492797772,
+          "floor_max_absolute_z": 7.155023210917969
+        },
+        {
+          "filename": "30020.npz",
+          "sha256": "20f184c59e3c48ba9ccac6e68ab275cd9450def1f3e78f6e5dedd44f51508d1e",
+          "steps": 72,
+          "legacy_max_absolute_z": 7.326030416080735,
+          "floor_max_absolute_z": 5.018518665433418
+        },
+        {
+          "filename": "30021.npz",
+          "sha256": "b190b96771f3dff930f6494858b3ffe0a45f71dd01807d57d9aa08ce25ef4a59",
+          "steps": 72,
+          "legacy_max_absolute_z": 14.064391842285564,
+          "floor_max_absolute_z": 11.145862925298328
+        },
+        {
+          "filename": "30022.npz",
+          "sha256": "193039a6f4b32a3c5771fe842734295a8c26472a69a67f14bca728dee265b14d",
+          "steps": 72,
+          "legacy_max_absolute_z": 10.72791125778437,
+          "floor_max_absolute_z": 4.504840295846765
+        },
+        {
+          "filename": "30023.npz",
+          "sha256": "a27793d07be7b8b4c54725d25c77572cf0c6d2e4e120b0425465e2dcea37d00e",
+          "steps": 76,
+          "legacy_max_absolute_z": 27.34441644355655,
+          "floor_max_absolute_z": 27.34441644355655
+        }
+      ]
+    },
+    {
+      "trace_condition": "gru33_s0_traces_30000_24",
+      "feature_count": 33,
+      "episodes": 24,
+      "steps": 2311,
+      "legacy_max_absolute_z": 102.89087836706729,
+      "floor_max_absolute_z": 40.79458007593562,
+      "legacy_q99_absolute_z": 8.029648733669436,
+      "floor_q99_absolute_z": 5.81973614942936,
+      "legacy_steps_with_max_z_above100": 1,
+      "floor_steps_with_max_z_above100": 0,
+      "extreme_feature": "object_yaw",
+      "extreme_training_std": 0.009785513059564169,
+      "top_features_by_legacy_max": [
+        "object_yaw",
+        "object_wz",
+        "object_roll",
+        "object_wx",
+        "object_wy",
+        "object_minus_ee_y",
+        "object_minus_ee_x",
+        "object_pitch"
+      ],
+      "per_episode": [
+        {
+          "filename": "30000.npz",
+          "sha256": "9ebedbbd6167c047f89eebf08a1a694c9ca308a2889c6f067245cba72da97c62",
+          "steps": 73,
+          "legacy_max_absolute_z": 4.92658899424138,
+          "floor_max_absolute_z": 4.92658899424138
+        },
+        {
+          "filename": "30001.npz",
+          "sha256": "53134e7e6dd6dd84844b08c0e2aab43b06ed2f39ebc36a1499440f9c3395130e",
+          "steps": 74,
+          "legacy_max_absolute_z": 4.909491755160576,
+          "floor_max_absolute_z": 4.909491755160576
+        },
+        {
+          "filename": "30002.npz",
+          "sha256": "0b0c209b063cbb20bdc57083cca0d5d1f6402a5f5126dc8a4e4c70d5c0141268",
+          "steps": 74,
+          "legacy_max_absolute_z": 8.109035284038795,
+          "floor_max_absolute_z": 8.109035284038795
+        },
+        {
+          "filename": "30003.npz",
+          "sha256": "b16f1403136ba14d90e5eec18e5f797883d2724ddc2cd946864bc674de4928a5",
+          "steps": 180,
+          "legacy_max_absolute_z": 69.85997199110582,
+          "floor_max_absolute_z": 40.79458007593562
+        },
+        {
+          "filename": "30004.npz",
+          "sha256": "a60b70558bb2f588f1f66be980f12f3fbe738d33367a2ee4bc4b3bfa6804c343",
+          "steps": 73,
+          "legacy_max_absolute_z": 4.986898254731182,
+          "floor_max_absolute_z": 4.986898254731182
+        },
+        {
+          "filename": "30005.npz",
+          "sha256": "75c9d883902acfa40f7f954922c63bca4ece56143b156315db5d31dfc40993a5",
+          "steps": 73,
+          "legacy_max_absolute_z": 13.626451828989344,
+          "floor_max_absolute_z": 13.626451828989344
+        },
+        {
+          "filename": "30006.npz",
+          "sha256": "005c637bf48df2eb65e0e9a72da1ee5192b164880f229574c54e7b900350c675",
+          "steps": 69,
+          "legacy_max_absolute_z": 5.316675785031331,
+          "floor_max_absolute_z": 5.000263010059969
+        },
+        {
+          "filename": "30007.npz",
+          "sha256": "9c7c202b0cf3c70378ff277c45a4db2e0013f67e651bdb7f9745b0b154d26a5f",
+          "steps": 180,
+          "legacy_max_absolute_z": 39.249432743861135,
+          "floor_max_absolute_z": 16.12453308388075
+        },
+        {
+          "filename": "30008.npz",
+          "sha256": "708cae7b7cce36cdf8c68ba88ed1ba4cddfc7521182499513a642d10dcbad761",
+          "steps": 78,
+          "legacy_max_absolute_z": 21.963447907462555,
+          "floor_max_absolute_z": 21.963447907462555
+        },
+        {
+          "filename": "30009.npz",
+          "sha256": "6a407e0d58c62e34b9d8d326c8f6b19d2a288fe6d42cf9c1a1cebf621d28f716",
+          "steps": 180,
+          "legacy_max_absolute_z": 26.35287293707543,
+          "floor_max_absolute_z": 26.35287293707543
+        },
+        {
+          "filename": "30010.npz",
+          "sha256": "c679316b7fa10e0654159eb35e7eb038d4d14408d66900ae80214046477bc9a1",
+          "steps": 73,
+          "legacy_max_absolute_z": 6.870744421489128,
+          "floor_max_absolute_z": 6.870744421489128
+        },
+        {
+          "filename": "30011.npz",
+          "sha256": "b913f2fbef7170f12d3f8074ba2d0e64fa86f016d90faa968dbb24828b3b51e6",
+          "steps": 73,
+          "legacy_max_absolute_z": 4.911760463626882,
+          "floor_max_absolute_z": 4.911760463626882
+        },
+        {
+          "filename": "30012.npz",
+          "sha256": "ef978c3248bc37b7c46ee2eaa0c37baf4e6ebf32f7c97e42f5e6b372f7d71703",
+          "steps": 75,
+          "legacy_max_absolute_z": 4.18805153806939,
+          "floor_max_absolute_z": 4.18805153806939
+        },
+        {
+          "filename": "30013.npz",
+          "sha256": "eb46ee11add5d06b32461442e907af70aa4507f0660131779abab405b223a693",
+          "steps": 180,
+          "legacy_max_absolute_z": 102.89087836706729,
+          "floor_max_absolute_z": 20.136800679419306
+        },
+        {
+          "filename": "30014.npz",
+          "sha256": "7d99d25c7c34ad0ddc8b54f803646461d3db5e3525a7695c7f4cb410b1fede2e",
+          "steps": 77,
+          "legacy_max_absolute_z": 4.242552764043238,
+          "floor_max_absolute_z": 4.099728597723218
+        },
+        {
+          "filename": "30015.npz",
+          "sha256": "26b02c91541218c13355e9a1a49dbc3ebb62abcc8023799509bec432b4b86e39",
+          "steps": 74,
+          "legacy_max_absolute_z": 26.662745444710662,
+          "floor_max_absolute_z": 26.662745444710662
+        },
+        {
+          "filename": "30016.npz",
+          "sha256": "2a7275c9bda3029736aeb7304255ccfd58c8ac45458999acc8515ff48d41343e",
+          "steps": 76,
+          "legacy_max_absolute_z": 4.146561098892609,
+          "floor_max_absolute_z": 4.146561098892609
+        },
+        {
+          "filename": "30017.npz",
+          "sha256": "90fc91080ca32c397cd65e8afb5b0e8cfb8014dfcb5722b8a1524a4dcd8eba60",
+          "steps": 74,
+          "legacy_max_absolute_z": 4.533826288792388,
+          "floor_max_absolute_z": 4.533826288792388
+        },
+        {
+          "filename": "30018.npz",
+          "sha256": "f83db66e268641e1a9b1a3085a46470c6c9f88f6273ae19f8c1bc77fd61ffa68",
+          "steps": 77,
+          "legacy_max_absolute_z": 4.06539433045409,
+          "floor_max_absolute_z": 4.06539433045409
+        },
+        {
+          "filename": "30019.npz",
+          "sha256": "df6c15f937dcf07cbef3643e959dabcc80dfbe6566156ed9f2be564a401c6461",
+          "steps": 74,
+          "legacy_max_absolute_z": 17.344611454500786,
+          "floor_max_absolute_z": 17.344611454500786
+        },
+        {
+          "filename": "30020.npz",
+          "sha256": "839ee5cf4dbf563e6715a64e2d8cdeb85aa803f00b156d3dcc916ab25fe9d054",
+          "steps": 180,
+          "legacy_max_absolute_z": 24.065493158787298,
+          "floor_max_absolute_z": 24.065493158787298
+        },
+        {
+          "filename": "30021.npz",
+          "sha256": "ec0dc82792a1da83ee696974ff5e1c50a3a40513fe46c52351ae499efe666ac7",
+          "steps": 72,
+          "legacy_max_absolute_z": 5.120316387361009,
+          "floor_max_absolute_z": 4.934024743530317
+        },
+        {
+          "filename": "30022.npz",
+          "sha256": "b43e5a5a8012e254efe5610f6128b71e8a2644076b322b7f37f970a803ca63f2",
+          "steps": 74,
+          "legacy_max_absolute_z": 4.552078703577613,
+          "floor_max_absolute_z": 4.507641520605857
+        },
+        {
+          "filename": "30023.npz",
+          "sha256": "b132503e128351259e5cb83dd89743352862b4fbeddc6d517a9379c37869b0a3",
+          "steps": 78,
+          "legacy_max_absolute_z": 23.136853275529404,
+          "floor_max_absolute_z": 23.136853275529404
+        }
+      ]
+    },
+    {
+      "trace_condition": "mlp22_s0_traces_30000_24",
+      "feature_count": 22,
+      "episodes": 24,
+      "steps": 3705,
+      "legacy_max_absolute_z": 673.1120045091853,
+      "floor_max_absolute_z": 90.93397070798049,
+      "legacy_q99_absolute_z": 212.15248607445693,
+      "floor_q99_absolute_z": 31.473474875942422,
+      "legacy_steps_with_max_z_above100": 832,
+      "floor_steps_with_max_z_above100": 0,
+      "extreme_feature": "object_roll",
+      "extreme_training_std": 0.004669168563670596,
+      "top_features_by_legacy_max": [
+        "object_roll",
+        "object_yaw",
+        "object_wz",
+        "object_pitch",
+        "object_wx",
+        "object_wy",
+        "ee_x",
+        "object_x"
+      ],
+      "per_episode": [
+        {
+          "filename": "30000.npz",
+          "sha256": "67e89150a469b6885fef1da5482ce860bda7ad7202826d63cdd29773e97a577f",
+          "steps": 56,
+          "legacy_max_absolute_z": 5.137332531951188,
+          "floor_max_absolute_z": 5.137332531951188
+        },
+        {
+          "filename": "30001.npz",
+          "sha256": "a93fcbed6bae81e9ab3e5a16ab521d3c47b8bb2d1d26ff4abea19e9d0ceab971",
+          "steps": 59,
+          "legacy_max_absolute_z": 8.143804218603359,
+          "floor_max_absolute_z": 8.143804218603359
+        },
+        {
+          "filename": "30002.npz",
+          "sha256": "c0caca495e80c1aaca7fc4d0f7a6b9dc7117f667f93de9a7a085aa676034407f",
+          "steps": 180,
+          "legacy_max_absolute_z": 17.741066804115906,
+          "floor_max_absolute_z": 17.741066804115906
+        },
+        {
+          "filename": "30003.npz",
+          "sha256": "b6f31cbbb71e2438367f4493b07dc1cf326789a56177d04fbce11302e40e4fad",
+          "steps": 180,
+          "legacy_max_absolute_z": 14.059232141760534,
+          "floor_max_absolute_z": 2.934661143343992
+        },
+        {
+          "filename": "30004.npz",
+          "sha256": "38f6fa3f78f74ec9868c7995a871d303bb446573fffc9bd19451d597c6bf4235",
+          "steps": 180,
+          "legacy_max_absolute_z": 55.85299080473977,
+          "floor_max_absolute_z": 16.969825320197955
+        },
+        {
+          "filename": "30005.npz",
+          "sha256": "04c3c7ba5d9bffcacd91332f0dd1dc4da74a462f25d584d136be13d961ffb0e6",
+          "steps": 180,
+          "legacy_max_absolute_z": 5.218055437398471,
+          "floor_max_absolute_z": 5.131322173234011
+        },
+        {
+          "filename": "30006.npz",
+          "sha256": "0872aabcbda50d3736b3fb0809bfbb8b806a20553e5674ec8dba504ee7e7e4e9",
+          "steps": 180,
+          "legacy_max_absolute_z": 55.18192703122291,
+          "floor_max_absolute_z": 20.16441099881279
+        },
+        {
+          "filename": "30007.npz",
+          "sha256": "372ec2b10310dd834938b2d0e7fd5cc0d03a156c51497638191ae5ccb1a04a3d",
+          "steps": 180,
+          "legacy_max_absolute_z": 72.13132618397454,
+          "floor_max_absolute_z": 17.004731124389163
+        },
+        {
+          "filename": "30008.npz",
+          "sha256": "80cd7deb349f0963f7fe268e18dbb497b3018fc818b0161d5ad1c9d0f3627028",
+          "steps": 180,
+          "legacy_max_absolute_z": 483.7267086452325,
+          "floor_max_absolute_z": 81.71624573781702
+        },
+        {
+          "filename": "30009.npz",
+          "sha256": "a372c24c8738116c1396e8c49b2786c564c783e2df5a56878725ae63f4fe7362",
+          "steps": 54,
+          "legacy_max_absolute_z": 5.143243777899508,
+          "floor_max_absolute_z": 5.143243777899508
+        },
+        {
+          "filename": "30010.npz",
+          "sha256": "92f237fa66c1306f5ec934f9180cd95a671d6fe59f9ea234ca8b4371daa93924",
+          "steps": 180,
+          "legacy_max_absolute_z": 275.55532077788143,
+          "floor_max_absolute_z": 62.36094434830856
+        },
+        {
+          "filename": "30011.npz",
+          "sha256": "de42de58a374b05ec8eae8b760019d834126210d594272a3f8b94f5308e67621",
+          "steps": 180,
+          "legacy_max_absolute_z": 160.67439968757412,
+          "floor_max_absolute_z": 87.53587852177478
+        },
+        {
+          "filename": "30012.npz",
+          "sha256": "d94b1b29157e5ceeb13b9fe99703bff4414b00801b3a77a263d28c501533b93c",
+          "steps": 180,
+          "legacy_max_absolute_z": 9.015690466341137,
+          "floor_max_absolute_z": 9.015690466341137
+        },
+        {
+          "filename": "30013.npz",
+          "sha256": "ad3ba2f9740525d2829e48310e1576e04fce4b789932037c1d995d2f0d1e645b",
+          "steps": 180,
+          "legacy_max_absolute_z": 31.374744132930413,
+          "floor_max_absolute_z": 9.659136682923188
+        },
+        {
+          "filename": "30014.npz",
+          "sha256": "730344935e194159d4de9451eb65acfde99cdbbaa57640deaea64de1101378ca",
+          "steps": 180,
+          "legacy_max_absolute_z": 630.5551862550534,
+          "floor_max_absolute_z": 62.84061345174525
+        },
+        {
+          "filename": "30015.npz",
+          "sha256": "9f592e32929f32401e18950de1a82c8c665394b4e814f51107fd48fc10d0c048",
+          "steps": 59,
+          "legacy_max_absolute_z": 4.284638964288268,
+          "floor_max_absolute_z": 4.284638964288268
+        },
+        {
+          "filename": "30016.npz",
+          "sha256": "7b5cb47c7c128cc2c0aad6952e549105b25bb5d163b6cbeb17e1fd4bd1a05631",
+          "steps": 180,
+          "legacy_max_absolute_z": 3.5607608586434103,
+          "floor_max_absolute_z": 2.987086735140728
+        },
+        {
+          "filename": "30017.npz",
+          "sha256": "154c46b2124e4b7659fb3fb207c77f267a9de603f3323140468e5e7de8d32691",
+          "steps": 57,
+          "legacy_max_absolute_z": 29.82894783680308,
+          "floor_max_absolute_z": 14.211631608617553
+        },
+        {
+          "filename": "30018.npz",
+          "sha256": "53dfae568c2231bd5a1d46618a65b043c3ccba08dd228bb751e9593036fa3d06",
+          "steps": 180,
+          "legacy_max_absolute_z": 673.1120045091853,
+          "floor_max_absolute_z": 62.857468225671774
+        },
+        {
+          "filename": "30019.npz",
+          "sha256": "b778ce411d32533e0dda2fb153203076f14112a09e554b434f470d7c1d6236ad",
+          "steps": 180,
+          "legacy_max_absolute_z": 23.897238311648525,
+          "floor_max_absolute_z": 10.1172966381097
+        },
+        {
+          "filename": "30020.npz",
+          "sha256": "2d254effdf321a368dd12d79ce73ef05a3ea67d17225b0e3df03885483f24d74",
+          "steps": 180,
+          "legacy_max_absolute_z": 5.1107244774034255,
+          "floor_max_absolute_z": 5.1107244774034255
+        },
+        {
+          "filename": "30021.npz",
+          "sha256": "df5e03bace072d2d0a4ae6be0dd071cfbb74b038efc549b6da00a7d07c99bcd2",
+          "steps": 180,
+          "legacy_max_absolute_z": 7.225851787941518,
+          "floor_max_absolute_z": 5.866393651375361
+        },
+        {
+          "filename": "30022.npz",
+          "sha256": "eb681c751b026535c81e014d846b0fb89a47269a4a083e9d00bd3f5bcbfcd049",
+          "steps": 180,
+          "legacy_max_absolute_z": 3.858297325669152,
+          "floor_max_absolute_z": 3.858297325669152
+        },
+        {
+          "filename": "30023.npz",
+          "sha256": "714b50fc4287cdb4d49739ae74760bfe3c88fa93f62d34c95c86e81e10258068",
+          "steps": 180,
+          "legacy_max_absolute_z": 320.47546033193663,
+          "floor_max_absolute_z": 90.93397070798049
+        }
+      ]
+    }
+  ]
+}

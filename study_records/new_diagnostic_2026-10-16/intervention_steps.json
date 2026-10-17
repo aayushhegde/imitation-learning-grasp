@@ -1,0 +1,1682 @@
+[
+  {
+    "condition": "oracle",
+    "seed": 2000,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 74,
+    "interventions": 0
+  },
+  {
+    "condition": "oracle",
+    "seed": 2001,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 75,
+    "interventions": 0
+  },
+  {
+    "condition": "oracle",
+    "seed": 2002,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 77,
+    "interventions": 0
+  },
+  {
+    "condition": "oracle",
+    "seed": 2003,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 74,
+    "interventions": 0
+  },
+  {
+    "condition": "oracle",
+    "seed": 2004,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 75,
+    "interventions": 0
+  },
+  {
+    "condition": "oracle",
+    "seed": 2005,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 76,
+    "interventions": 0
+  },
+  {
+    "condition": "oracle",
+    "seed": 2006,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 79,
+    "interventions": 0
+  },
+  {
+    "condition": "oracle",
+    "seed": 2007,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 78,
+    "interventions": 0
+  },
+  {
+    "condition": "oracle",
+    "seed": 2008,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 78,
+    "interventions": 0
+  },
+  {
+    "condition": "oracle",
+    "seed": 2009,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 77,
+    "interventions": 0
+  },
+  {
+    "condition": "oracle",
+    "seed": 2010,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 73,
+    "interventions": 0
+  },
+  {
+    "condition": "oracle",
+    "seed": 2011,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 76,
+    "interventions": 0
+  },
+  {
+    "condition": "oracle",
+    "seed": 2012,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 74,
+    "interventions": 0
+  },
+  {
+    "condition": "oracle",
+    "seed": 2013,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 75,
+    "interventions": 0
+  },
+  {
+    "condition": "oracle",
+    "seed": 2014,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 80,
+    "interventions": 0
+  },
+  {
+    "condition": "oracle",
+    "seed": 2015,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 75,
+    "interventions": 0
+  },
+  {
+    "condition": "oracle",
+    "seed": 2016,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 81,
+    "interventions": 0
+  },
+  {
+    "condition": "oracle",
+    "seed": 2017,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 80,
+    "interventions": 0
+  },
+  {
+    "condition": "oracle",
+    "seed": 2018,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 75,
+    "interventions": 0
+  },
+  {
+    "condition": "oracle",
+    "seed": 2019,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 72,
+    "interventions": 0
+  },
+  {
+    "condition": "oracle",
+    "seed": 2020,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 74,
+    "interventions": 0
+  },
+  {
+    "condition": "oracle",
+    "seed": 2021,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 76,
+    "interventions": 0
+  },
+  {
+    "condition": "oracle",
+    "seed": 2022,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 74,
+    "interventions": 0
+  },
+  {
+    "condition": "oracle",
+    "seed": 2023,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 73,
+    "interventions": 0
+  },
+  {
+    "condition": "oracle",
+    "seed": 2024,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 75,
+    "interventions": 0
+  },
+  {
+    "condition": "oracle",
+    "seed": 2025,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 81,
+    "interventions": 0
+  },
+  {
+    "condition": "oracle",
+    "seed": 2026,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 72,
+    "interventions": 0
+  },
+  {
+    "condition": "oracle",
+    "seed": 2027,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 73,
+    "interventions": 0
+  },
+  {
+    "condition": "oracle",
+    "seed": 2028,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 74,
+    "interventions": 0
+  },
+  {
+    "condition": "oracle",
+    "seed": 2029,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 78,
+    "interventions": 0
+  },
+  {
+    "condition": "transport_perturbation",
+    "seed": 2000,
+    "first_pre_step": 33,
+    "first_executed_step": 34,
+    "intervention_pre_steps": [
+      33,
+      34,
+      35
+    ],
+    "intervention_executed_steps": [
+      34,
+      35,
+      36
+    ],
+    "episode_steps": 78,
+    "interventions": 3
+  },
+  {
+    "condition": "transport_perturbation",
+    "seed": 2001,
+    "first_pre_step": 34,
+    "first_executed_step": 35,
+    "intervention_pre_steps": [
+      34,
+      35,
+      36
+    ],
+    "intervention_executed_steps": [
+      35,
+      36,
+      37
+    ],
+    "episode_steps": 79,
+    "interventions": 3
+  },
+  {
+    "condition": "transport_perturbation",
+    "seed": 2002,
+    "first_pre_step": 37,
+    "first_executed_step": 38,
+    "intervention_pre_steps": [
+      37,
+      38,
+      39
+    ],
+    "intervention_executed_steps": [
+      38,
+      39,
+      40
+    ],
+    "episode_steps": 81,
+    "interventions": 3
+  },
+  {
+    "condition": "transport_perturbation",
+    "seed": 2003,
+    "first_pre_step": 33,
+    "first_executed_step": 34,
+    "intervention_pre_steps": [
+      33,
+      34,
+      35
+    ],
+    "intervention_executed_steps": [
+      34,
+      35,
+      36
+    ],
+    "episode_steps": 78,
+    "interventions": 3
+  },
+  {
+    "condition": "transport_perturbation",
+    "seed": 2004,
+    "first_pre_step": 34,
+    "first_executed_step": 35,
+    "intervention_pre_steps": [
+      34,
+      35,
+      36
+    ],
+    "intervention_executed_steps": [
+      35,
+      36,
+      37
+    ],
+    "episode_steps": 78,
+    "interventions": 3
+  },
+  {
+    "condition": "transport_perturbation",
+    "seed": 2005,
+    "first_pre_step": 35,
+    "first_executed_step": 36,
+    "intervention_pre_steps": [
+      35,
+      36,
+      37
+    ],
+    "intervention_executed_steps": [
+      36,
+      37,
+      38
+    ],
+    "episode_steps": 80,
+    "interventions": 3
+  },
+  {
+    "condition": "transport_perturbation",
+    "seed": 2006,
+    "first_pre_step": 38,
+    "first_executed_step": 39,
+    "intervention_pre_steps": [
+      38,
+      39,
+      40
+    ],
+    "intervention_executed_steps": [
+      39,
+      40,
+      41
+    ],
+    "episode_steps": 83,
+    "interventions": 3
+  },
+  {
+    "condition": "transport_perturbation",
+    "seed": 2007,
+    "first_pre_step": 37,
+    "first_executed_step": 38,
+    "intervention_pre_steps": [
+      37,
+      38,
+      39
+    ],
+    "intervention_executed_steps": [
+      38,
+      39,
+      40
+    ],
+    "episode_steps": 82,
+    "interventions": 3
+  },
+  {
+    "condition": "transport_perturbation",
+    "seed": 2008,
+    "first_pre_step": 38,
+    "first_executed_step": 39,
+    "intervention_pre_steps": [
+      38,
+      39,
+      40
+    ],
+    "intervention_executed_steps": [
+      39,
+      40,
+      41
+    ],
+    "episode_steps": 82,
+    "interventions": 3
+  },
+  {
+    "condition": "transport_perturbation",
+    "seed": 2009,
+    "first_pre_step": 36,
+    "first_executed_step": 37,
+    "intervention_pre_steps": [
+      36,
+      37,
+      38
+    ],
+    "intervention_executed_steps": [
+      37,
+      38,
+      39
+    ],
+    "episode_steps": 81,
+    "interventions": 3
+  },
+  {
+    "condition": "transport_perturbation",
+    "seed": 2010,
+    "first_pre_step": 33,
+    "first_executed_step": 34,
+    "intervention_pre_steps": [
+      33,
+      34,
+      35
+    ],
+    "intervention_executed_steps": [
+      34,
+      35,
+      36
+    ],
+    "episode_steps": 77,
+    "interventions": 3
+  },
+  {
+    "condition": "transport_perturbation",
+    "seed": 2011,
+    "first_pre_step": 36,
+    "first_executed_step": 37,
+    "intervention_pre_steps": [
+      36,
+      37,
+      38
+    ],
+    "intervention_executed_steps": [
+      37,
+      38,
+      39
+    ],
+    "episode_steps": 80,
+    "interventions": 3
+  },
+  {
+    "condition": "transport_perturbation",
+    "seed": 2012,
+    "first_pre_step": 34,
+    "first_executed_step": 35,
+    "intervention_pre_steps": [
+      34,
+      35,
+      36
+    ],
+    "intervention_executed_steps": [
+      35,
+      36,
+      37
+    ],
+    "episode_steps": 78,
+    "interventions": 3
+  },
+  {
+    "condition": "transport_perturbation",
+    "seed": 2013,
+    "first_pre_step": 34,
+    "first_executed_step": 35,
+    "intervention_pre_steps": [
+      34,
+      35,
+      36
+    ],
+    "intervention_executed_steps": [
+      35,
+      36,
+      37
+    ],
+    "episode_steps": 79,
+    "interventions": 3
+  },
+  {
+    "condition": "transport_perturbation",
+    "seed": 2014,
+    "first_pre_step": 39,
+    "first_executed_step": 40,
+    "intervention_pre_steps": [
+      39,
+      40,
+      41
+    ],
+    "intervention_executed_steps": [
+      40,
+      41,
+      42
+    ],
+    "episode_steps": 84,
+    "interventions": 3
+  },
+  {
+    "condition": "transport_perturbation",
+    "seed": 2015,
+    "first_pre_step": 34,
+    "first_executed_step": 35,
+    "intervention_pre_steps": [
+      34,
+      35,
+      36
+    ],
+    "intervention_executed_steps": [
+      35,
+      36,
+      37
+    ],
+    "episode_steps": 78,
+    "interventions": 3
+  },
+  {
+    "condition": "transport_perturbation",
+    "seed": 2016,
+    "first_pre_step": 40,
+    "first_executed_step": 41,
+    "intervention_pre_steps": [
+      40,
+      41,
+      42
+    ],
+    "intervention_executed_steps": [
+      41,
+      42,
+      43
+    ],
+    "episode_steps": 85,
+    "interventions": 3
+  },
+  {
+    "condition": "transport_perturbation",
+    "seed": 2017,
+    "first_pre_step": 39,
+    "first_executed_step": 40,
+    "intervention_pre_steps": [
+      39,
+      40,
+      41
+    ],
+    "intervention_executed_steps": [
+      40,
+      41,
+      42
+    ],
+    "episode_steps": 84,
+    "interventions": 3
+  },
+  {
+    "condition": "transport_perturbation",
+    "seed": 2018,
+    "first_pre_step": 34,
+    "first_executed_step": 35,
+    "intervention_pre_steps": [
+      34,
+      35,
+      36
+    ],
+    "intervention_executed_steps": [
+      35,
+      36,
+      37
+    ],
+    "episode_steps": 78,
+    "interventions": 3
+  },
+  {
+    "condition": "transport_perturbation",
+    "seed": 2019,
+    "first_pre_step": 31,
+    "first_executed_step": 32,
+    "intervention_pre_steps": [
+      31,
+      32,
+      33
+    ],
+    "intervention_executed_steps": [
+      32,
+      33,
+      34
+    ],
+    "episode_steps": 76,
+    "interventions": 3
+  },
+  {
+    "condition": "transport_perturbation",
+    "seed": 2020,
+    "first_pre_step": 33,
+    "first_executed_step": 34,
+    "intervention_pre_steps": [
+      33,
+      34,
+      35
+    ],
+    "intervention_executed_steps": [
+      34,
+      35,
+      36
+    ],
+    "episode_steps": 78,
+    "interventions": 3
+  },
+  {
+    "condition": "transport_perturbation",
+    "seed": 2021,
+    "first_pre_step": 35,
+    "first_executed_step": 36,
+    "intervention_pre_steps": [
+      35,
+      36,
+      37
+    ],
+    "intervention_executed_steps": [
+      36,
+      37,
+      38
+    ],
+    "episode_steps": 80,
+    "interventions": 3
+  },
+  {
+    "condition": "transport_perturbation",
+    "seed": 2022,
+    "first_pre_step": 34,
+    "first_executed_step": 35,
+    "intervention_pre_steps": [
+      34,
+      35,
+      36
+    ],
+    "intervention_executed_steps": [
+      35,
+      36,
+      37
+    ],
+    "episode_steps": 78,
+    "interventions": 3
+  },
+  {
+    "condition": "transport_perturbation",
+    "seed": 2023,
+    "first_pre_step": 32,
+    "first_executed_step": 33,
+    "intervention_pre_steps": [
+      32,
+      33,
+      34
+    ],
+    "intervention_executed_steps": [
+      33,
+      34,
+      35
+    ],
+    "episode_steps": 77,
+    "interventions": 3
+  },
+  {
+    "condition": "transport_perturbation",
+    "seed": 2024,
+    "first_pre_step": 34,
+    "first_executed_step": 35,
+    "intervention_pre_steps": [
+      34,
+      35,
+      36
+    ],
+    "intervention_executed_steps": [
+      35,
+      36,
+      37
+    ],
+    "episode_steps": 79,
+    "interventions": 3
+  },
+  {
+    "condition": "transport_perturbation",
+    "seed": 2025,
+    "first_pre_step": 40,
+    "first_executed_step": 41,
+    "intervention_pre_steps": [
+      40,
+      41,
+      42
+    ],
+    "intervention_executed_steps": [
+      41,
+      42,
+      43
+    ],
+    "episode_steps": 85,
+    "interventions": 3
+  },
+  {
+    "condition": "transport_perturbation",
+    "seed": 2026,
+    "first_pre_step": 31,
+    "first_executed_step": 32,
+    "intervention_pre_steps": [
+      31,
+      32,
+      33
+    ],
+    "intervention_executed_steps": [
+      32,
+      33,
+      34
+    ],
+    "episode_steps": 76,
+    "interventions": 3
+  },
+  {
+    "condition": "transport_perturbation",
+    "seed": 2027,
+    "first_pre_step": 32,
+    "first_executed_step": 33,
+    "intervention_pre_steps": [
+      32,
+      33,
+      34
+    ],
+    "intervention_executed_steps": [
+      33,
+      34,
+      35
+    ],
+    "episode_steps": 77,
+    "interventions": 3
+  },
+  {
+    "condition": "transport_perturbation",
+    "seed": 2028,
+    "first_pre_step": 33,
+    "first_executed_step": 34,
+    "intervention_pre_steps": [
+      33,
+      34,
+      35
+    ],
+    "intervention_executed_steps": [
+      34,
+      35,
+      36
+    ],
+    "episode_steps": 78,
+    "interventions": 3
+  },
+  {
+    "condition": "transport_perturbation",
+    "seed": 2029,
+    "first_pre_step": 37,
+    "first_executed_step": 38,
+    "intervention_pre_steps": [
+      37,
+      38,
+      39
+    ],
+    "intervention_executed_steps": [
+      38,
+      39,
+      40
+    ],
+    "episode_steps": 82,
+    "interventions": 3
+  },
+  {
+    "condition": "open_during_close",
+    "seed": 2000,
+    "first_pre_step": 11,
+    "first_executed_step": 12,
+    "intervention_pre_steps": [
+      11,
+      12,
+      13
+    ],
+    "intervention_executed_steps": [
+      12,
+      13,
+      14
+    ],
+    "episode_steps": 77,
+    "interventions": 3
+  },
+  {
+    "condition": "open_during_close",
+    "seed": 2001,
+    "first_pre_step": 12,
+    "first_executed_step": 13,
+    "intervention_pre_steps": [
+      12,
+      13,
+      14
+    ],
+    "intervention_executed_steps": [
+      13,
+      14,
+      15
+    ],
+    "episode_steps": 78,
+    "interventions": 3
+  },
+  {
+    "condition": "open_during_close",
+    "seed": 2002,
+    "first_pre_step": 16,
+    "first_executed_step": 17,
+    "intervention_pre_steps": [
+      16,
+      17,
+      18
+    ],
+    "intervention_executed_steps": [
+      17,
+      18,
+      19
+    ],
+    "episode_steps": 80,
+    "interventions": 3
+  },
+  {
+    "condition": "open_during_close",
+    "seed": 2003,
+    "first_pre_step": 11,
+    "first_executed_step": 12,
+    "intervention_pre_steps": [
+      11,
+      12,
+      13
+    ],
+    "intervention_executed_steps": [
+      12,
+      13,
+      14
+    ],
+    "episode_steps": 77,
+    "interventions": 3
+  },
+  {
+    "condition": "open_during_close",
+    "seed": 2004,
+    "first_pre_step": 12,
+    "first_executed_step": 13,
+    "intervention_pre_steps": [
+      12,
+      13,
+      14
+    ],
+    "intervention_executed_steps": [
+      13,
+      14,
+      15
+    ],
+    "episode_steps": 78,
+    "interventions": 3
+  },
+  {
+    "condition": "open_during_close",
+    "seed": 2005,
+    "first_pre_step": 13,
+    "first_executed_step": 14,
+    "intervention_pre_steps": [
+      13,
+      14,
+      15
+    ],
+    "intervention_executed_steps": [
+      14,
+      15,
+      16
+    ],
+    "episode_steps": 79,
+    "interventions": 3
+  },
+  {
+    "condition": "open_during_close",
+    "seed": 2006,
+    "first_pre_step": 16,
+    "first_executed_step": 17,
+    "intervention_pre_steps": [
+      16,
+      17,
+      18
+    ],
+    "intervention_executed_steps": [
+      17,
+      18,
+      19
+    ],
+    "episode_steps": 83,
+    "interventions": 3
+  },
+  {
+    "condition": "open_during_close",
+    "seed": 2007,
+    "first_pre_step": 15,
+    "first_executed_step": 16,
+    "intervention_pre_steps": [
+      15,
+      16,
+      17
+    ],
+    "intervention_executed_steps": [
+      16,
+      17,
+      18
+    ],
+    "episode_steps": 81,
+    "interventions": 3
+  },
+  {
+    "condition": "open_during_close",
+    "seed": 2008,
+    "first_pre_step": 16,
+    "first_executed_step": 17,
+    "intervention_pre_steps": [
+      16,
+      17,
+      18
+    ],
+    "intervention_executed_steps": [
+      17,
+      18,
+      19
+    ],
+    "episode_steps": 82,
+    "interventions": 3
+  },
+  {
+    "condition": "open_during_close",
+    "seed": 2009,
+    "first_pre_step": 11,
+    "first_executed_step": 12,
+    "intervention_pre_steps": [
+      11,
+      12,
+      13
+    ],
+    "intervention_executed_steps": [
+      12,
+      13,
+      14
+    ],
+    "episode_steps": 80,
+    "interventions": 3
+  },
+  {
+    "condition": "open_during_close",
+    "seed": 2010,
+    "first_pre_step": 11,
+    "first_executed_step": 12,
+    "intervention_pre_steps": [
+      11,
+      12,
+      13
+    ],
+    "intervention_executed_steps": [
+      12,
+      13,
+      14
+    ],
+    "episode_steps": 76,
+    "interventions": 3
+  },
+  {
+    "condition": "open_during_close",
+    "seed": 2011,
+    "first_pre_step": 14,
+    "first_executed_step": 15,
+    "intervention_pre_steps": [
+      14,
+      15,
+      16
+    ],
+    "intervention_executed_steps": [
+      15,
+      16,
+      17
+    ],
+    "episode_steps": 79,
+    "interventions": 3
+  },
+  {
+    "condition": "open_during_close",
+    "seed": 2012,
+    "first_pre_step": 12,
+    "first_executed_step": 13,
+    "intervention_pre_steps": [
+      12,
+      13,
+      14
+    ],
+    "intervention_executed_steps": [
+      13,
+      14,
+      15
+    ],
+    "episode_steps": 77,
+    "interventions": 3
+  },
+  {
+    "condition": "open_during_close",
+    "seed": 2013,
+    "first_pre_step": 12,
+    "first_executed_step": 13,
+    "intervention_pre_steps": [
+      12,
+      13,
+      14
+    ],
+    "intervention_executed_steps": [
+      13,
+      14,
+      15
+    ],
+    "episode_steps": 78,
+    "interventions": 3
+  },
+  {
+    "condition": "open_during_close",
+    "seed": 2014,
+    "first_pre_step": 16,
+    "first_executed_step": 17,
+    "intervention_pre_steps": [
+      16,
+      17,
+      18
+    ],
+    "intervention_executed_steps": [
+      17,
+      18,
+      19
+    ],
+    "episode_steps": 82,
+    "interventions": 3
+  },
+  {
+    "condition": "open_during_close",
+    "seed": 2015,
+    "first_pre_step": 12,
+    "first_executed_step": 13,
+    "intervention_pre_steps": [
+      12,
+      13,
+      14
+    ],
+    "intervention_executed_steps": [
+      13,
+      14,
+      15
+    ],
+    "episode_steps": 78,
+    "interventions": 3
+  },
+  {
+    "condition": "open_during_close",
+    "seed": 2016,
+    "first_pre_step": 16,
+    "first_executed_step": 17,
+    "intervention_pre_steps": [
+      16,
+      17,
+      18
+    ],
+    "intervention_executed_steps": [
+      17,
+      18,
+      19
+    ],
+    "episode_steps": 84,
+    "interventions": 3
+  },
+  {
+    "condition": "open_during_close",
+    "seed": 2017,
+    "first_pre_step": 16,
+    "first_executed_step": 17,
+    "intervention_pre_steps": [
+      16,
+      17,
+      18
+    ],
+    "intervention_executed_steps": [
+      17,
+      18,
+      19
+    ],
+    "episode_steps": 83,
+    "interventions": 3
+  },
+  {
+    "condition": "open_during_close",
+    "seed": 2018,
+    "first_pre_step": 12,
+    "first_executed_step": 13,
+    "intervention_pre_steps": [
+      12,
+      13,
+      14
+    ],
+    "intervention_executed_steps": [
+      13,
+      14,
+      15
+    ],
+    "episode_steps": 78,
+    "interventions": 3
+  },
+  {
+    "condition": "open_during_close",
+    "seed": 2019,
+    "first_pre_step": 9,
+    "first_executed_step": 10,
+    "intervention_pre_steps": [
+      9,
+      10,
+      11
+    ],
+    "intervention_executed_steps": [
+      10,
+      11,
+      12
+    ],
+    "episode_steps": 75,
+    "interventions": 3
+  },
+  {
+    "condition": "open_during_close",
+    "seed": 2020,
+    "first_pre_step": 11,
+    "first_executed_step": 12,
+    "intervention_pre_steps": [
+      11,
+      12,
+      13
+    ],
+    "intervention_executed_steps": [
+      12,
+      13,
+      14
+    ],
+    "episode_steps": 77,
+    "interventions": 3
+  },
+  {
+    "condition": "open_during_close",
+    "seed": 2021,
+    "first_pre_step": 14,
+    "first_executed_step": 15,
+    "intervention_pre_steps": [
+      14,
+      15,
+      16
+    ],
+    "intervention_executed_steps": [
+      15,
+      16,
+      17
+    ],
+    "episode_steps": 79,
+    "interventions": 3
+  },
+  {
+    "condition": "open_during_close",
+    "seed": 2022,
+    "first_pre_step": 12,
+    "first_executed_step": 13,
+    "intervention_pre_steps": [
+      12,
+      13,
+      14
+    ],
+    "intervention_executed_steps": [
+      13,
+      14,
+      15
+    ],
+    "episode_steps": 77,
+    "interventions": 3
+  },
+  {
+    "condition": "open_during_close",
+    "seed": 2023,
+    "first_pre_step": 10,
+    "first_executed_step": 11,
+    "intervention_pre_steps": [
+      10,
+      11,
+      12
+    ],
+    "intervention_executed_steps": [
+      11,
+      12,
+      13
+    ],
+    "episode_steps": 76,
+    "interventions": 3
+  },
+  {
+    "condition": "open_during_close",
+    "seed": 2024,
+    "first_pre_step": 12,
+    "first_executed_step": 13,
+    "intervention_pre_steps": [
+      12,
+      13,
+      14
+    ],
+    "intervention_executed_steps": [
+      13,
+      14,
+      15
+    ],
+    "episode_steps": 78,
+    "interventions": 3
+  },
+  {
+    "condition": "open_during_close",
+    "seed": 2025,
+    "first_pre_step": 17,
+    "first_executed_step": 18,
+    "intervention_pre_steps": [
+      17,
+      18,
+      19
+    ],
+    "intervention_executed_steps": [
+      18,
+      19,
+      20
+    ],
+    "episode_steps": 84,
+    "interventions": 3
+  },
+  {
+    "condition": "open_during_close",
+    "seed": 2026,
+    "first_pre_step": 9,
+    "first_executed_step": 10,
+    "intervention_pre_steps": [
+      9,
+      10,
+      11
+    ],
+    "intervention_executed_steps": [
+      10,
+      11,
+      12
+    ],
+    "episode_steps": 75,
+    "interventions": 3
+  },
+  {
+    "condition": "open_during_close",
+    "seed": 2027,
+    "first_pre_step": 10,
+    "first_executed_step": 11,
+    "intervention_pre_steps": [
+      10,
+      11,
+      12
+    ],
+    "intervention_executed_steps": [
+      11,
+      12,
+      13
+    ],
+    "episode_steps": 76,
+    "interventions": 3
+  },
+  {
+    "condition": "open_during_close",
+    "seed": 2028,
+    "first_pre_step": 11,
+    "first_executed_step": 12,
+    "intervention_pre_steps": [
+      11,
+      12,
+      13
+    ],
+    "intervention_executed_steps": [
+      12,
+      13,
+      14
+    ],
+    "episode_steps": 77,
+    "interventions": 3
+  },
+  {
+    "condition": "open_during_close",
+    "seed": 2029,
+    "first_pre_step": 15,
+    "first_executed_step": 16,
+    "intervention_pre_steps": [
+      15,
+      16,
+      17
+    ],
+    "intervention_executed_steps": [
+      16,
+      17,
+      18
+    ],
+    "episode_steps": 82,
+    "interventions": 3
+  },
+  {
+    "condition": "expert_history",
+    "seed": 2000,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 73,
+    "interventions": 0
+  },
+  {
+    "condition": "expert_history",
+    "seed": 2001,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 74,
+    "interventions": 0
+  },
+  {
+    "condition": "expert_history",
+    "seed": 2002,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 75,
+    "interventions": 0
+  },
+  {
+    "condition": "expert_history",
+    "seed": 2003,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 74,
+    "interventions": 0
+  },
+  {
+    "condition": "expert_history",
+    "seed": 2004,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 75,
+    "interventions": 0
+  },
+  {
+    "condition": "expert_history",
+    "seed": 2005,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 76,
+    "interventions": 0
+  },
+  {
+    "condition": "expert_history",
+    "seed": 2006,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 76,
+    "interventions": 0
+  },
+  {
+    "condition": "expert_history",
+    "seed": 2007,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 75,
+    "interventions": 0
+  },
+  {
+    "condition": "expert_history",
+    "seed": 2008,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 76,
+    "interventions": 0
+  },
+  {
+    "condition": "expert_history",
+    "seed": 2009,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 77,
+    "interventions": 0
+  },
+  {
+    "condition": "expert_history",
+    "seed": 2010,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 72,
+    "interventions": 0
+  },
+  {
+    "condition": "expert_history",
+    "seed": 2011,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 74,
+    "interventions": 0
+  },
+  {
+    "condition": "expert_history",
+    "seed": 2012,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 73,
+    "interventions": 0
+  },
+  {
+    "condition": "expert_history",
+    "seed": 2013,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 74,
+    "interventions": 0
+  },
+  {
+    "condition": "expert_history",
+    "seed": 2014,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 77,
+    "interventions": 0
+  },
+  {
+    "condition": "expert_history",
+    "seed": 2015,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 75,
+    "interventions": 0
+  },
+  {
+    "condition": "expert_history",
+    "seed": 2016,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 79,
+    "interventions": 0
+  },
+  {
+    "condition": "expert_history",
+    "seed": 2017,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 79,
+    "interventions": 0
+  },
+  {
+    "condition": "expert_history",
+    "seed": 2018,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 75,
+    "interventions": 0
+  },
+  {
+    "condition": "expert_history",
+    "seed": 2019,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 71,
+    "interventions": 0
+  },
+  {
+    "condition": "expert_history",
+    "seed": 2020,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 74,
+    "interventions": 0
+  },
+  {
+    "condition": "expert_history",
+    "seed": 2021,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 74,
+    "interventions": 0
+  },
+  {
+    "condition": "expert_history",
+    "seed": 2022,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 74,
+    "interventions": 0
+  },
+  {
+    "condition": "expert_history",
+    "seed": 2023,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 72,
+    "interventions": 0
+  },
+  {
+    "condition": "expert_history",
+    "seed": 2024,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 74,
+    "interventions": 0
+  },
+  {
+    "condition": "expert_history",
+    "seed": 2025,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 79,
+    "interventions": 0
+  },
+  {
+    "condition": "expert_history",
+    "seed": 2026,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 71,
+    "interventions": 0
+  },
+  {
+    "condition": "expert_history",
+    "seed": 2027,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 72,
+    "interventions": 0
+  },
+  {
+    "condition": "expert_history",
+    "seed": 2028,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 74,
+    "interventions": 0
+  },
+  {
+    "condition": "expert_history",
+    "seed": 2029,
+    "first_pre_step": null,
+    "first_executed_step": null,
+    "intervention_pre_steps": [],
+    "intervention_executed_steps": [],
+    "episode_steps": 75,
+    "interventions": 0
+  }
+]

@@ -1,0 +1,591 @@
+{
+  "test_seeds": [
+    40000,
+    40099
+  ],
+  "n_scenes": 100,
+  "training_seeds": [
+    0,
+    1,
+    2
+  ],
+  "rows": [
+    {
+      "condition": "mlp22",
+      "training_seed": 0,
+      "n": 100,
+      "strict": 18,
+      "native": 61,
+      "wilson95": [
+        0.11700225498946489,
+        0.26667358386300466
+      ],
+      "failures": {
+        "grasp_failed": 25,
+        "unstable_placement": 10,
+        "barrier_collision": 42,
+        "success": 18,
+        "not_released": 3,
+        "no_retreat": 1,
+        "dropped_before_barrier": 1
+      },
+      "milestones": {
+        "ever_lifted": 67,
+        "ever_crossed": 64,
+        "ever_released": 50,
+        "retreated": 33
+      },
+      "first_contact_contexts": {
+        "after_crossing_far_side": 28,
+        "before_crossing": 14
+      },
+      "first_contact_bodies": {
+        "panda": 37,
+        "object": 5
+      },
+      "best_epoch": 71,
+      "best_validation_loss": 0.010302159935235977,
+      "final_validation_loss": 0.011031130328774452,
+      "final_training_loss": 0.005597822885633604,
+      "training_seconds": 5.258194923400879
+    },
+    {
+      "condition": "mlp22",
+      "training_seed": 1,
+      "n": 100,
+      "strict": 24,
+      "native": 82,
+      "wilson95": [
+        0.16691325556948947,
+        0.33232336349814207
+      ],
+      "failures": {
+        "success": 24,
+        "grasp_failed": 15,
+        "no_retreat": 11,
+        "barrier_collision": 21,
+        "not_released": 13,
+        "unstable_placement": 16
+      },
+      "milestones": {
+        "ever_lifted": 84,
+        "ever_crossed": 84,
+        "ever_released": 63,
+        "retreated": 47
+      },
+      "first_contact_contexts": {
+        "after_crossing_far_side": 20,
+        "before_crossing": 1
+      },
+      "first_contact_bodies": {
+        "panda": 16,
+        "object": 5
+      },
+      "best_epoch": 51,
+      "best_validation_loss": 0.010045203380286694,
+      "final_validation_loss": 0.011439659632742405,
+      "final_training_loss": 0.005505494596052917,
+      "training_seconds": 5.016569137573242
+    },
+    {
+      "condition": "mlp22",
+      "training_seed": 2,
+      "n": 100,
+      "strict": 23,
+      "native": 73,
+      "wilson95": [
+        0.1584326588030362,
+        0.32154383022873506
+      ],
+      "failures": {
+        "unstable_placement": 23,
+        "grasp_failed": 19,
+        "barrier_collision": 31,
+        "no_retreat": 2,
+        "success": 23,
+        "not_released": 2
+      },
+      "milestones": {
+        "ever_lifted": 79,
+        "ever_crossed": 76,
+        "ever_released": 66,
+        "retreated": 63
+      },
+      "first_contact_contexts": {
+        "before_crossing": 9,
+        "after_crossing_far_side": 22
+      },
+      "first_contact_bodies": {
+        "object": 9,
+        "panda": 22
+      },
+      "best_epoch": 80,
+      "best_validation_loss": 0.005942746065557003,
+      "final_validation_loss": 0.005942746065557003,
+      "final_training_loss": 0.005425057221479932,
+      "training_seconds": 4.94323992729187
+    },
+    {
+      "condition": "gru33",
+      "training_seed": 0,
+      "n": 100,
+      "strict": 93,
+      "native": 100,
+      "wilson95": [
+        0.8625048526092675,
+        0.9656807389327268
+      ],
+      "failures": {
+        "success": 93,
+        "barrier_collision": 3,
+        "unstable_placement": 2,
+        "not_released": 2
+      },
+      "milestones": {
+        "ever_lifted": 100,
+        "ever_crossed": 100,
+        "ever_released": 98,
+        "retreated": 95
+      },
+      "first_contact_contexts": {
+        "after_crossing_far_side": 3
+      },
+      "first_contact_bodies": {
+        "panda": 3
+      },
+      "best_epoch": 78,
+      "best_validation_loss": 0.0033538122661411762,
+      "final_validation_loss": 0.0038731680251657963,
+      "final_training_loss": 0.0016067791962996124,
+      "training_seconds": 16.973543882369995
+    },
+    {
+      "condition": "gru33",
+      "training_seed": 1,
+      "n": 100,
+      "strict": 89,
+      "native": 99,
+      "wilson95": [
+        0.8136870349691994,
+        0.9374580364293534
+      ],
+      "failures": {
+        "success": 89,
+        "dropped_before_barrier": 1,
+        "not_released": 4,
+        "unstable_placement": 5,
+        "barrier_collision": 1
+      },
+      "milestones": {
+        "ever_lifted": 100,
+        "ever_crossed": 99,
+        "ever_released": 95,
+        "retreated": 94
+      },
+      "first_contact_contexts": {
+        "after_crossing_far_side": 1
+      },
+      "first_contact_bodies": {
+        "panda": 1
+      },
+      "best_epoch": 80,
+      "best_validation_loss": 0.0032880043145269156,
+      "final_validation_loss": 0.0032880043145269156,
+      "final_training_loss": 0.0014571030158549547,
+      "training_seconds": 19.149569988250732
+    },
+    {
+      "condition": "gru33",
+      "training_seed": 2,
+      "n": 100,
+      "strict": 84,
+      "native": 97,
+      "wilson95": [
+        0.7557973061073001,
+        0.8990471151119509
+      ],
+      "failures": {
+        "success": 84,
+        "unstable_placement": 3,
+        "grasp_failed": 2,
+        "barrier_collision": 8,
+        "not_released": 3
+      },
+      "milestones": {
+        "ever_lifted": 98,
+        "ever_crossed": 98,
+        "ever_released": 93,
+        "retreated": 90
+      },
+      "first_contact_contexts": {
+        "after_crossing_far_side": 8
+      },
+      "first_contact_bodies": {
+        "object": 1,
+        "panda": 7
+      },
+      "best_epoch": 72,
+      "best_validation_loss": 0.003460338804870844,
+      "final_validation_loss": 0.0038778982125222683,
+      "final_training_loss": 0.002246723376447335,
+      "training_seconds": 19.79551911354065
+    },
+    {
+      "condition": "gru33_floor",
+      "training_seed": 0,
+      "n": 100,
+      "strict": 97,
+      "native": 100,
+      "wilson95": [
+        0.9154806357094745,
+        0.9897454759759607
+      ],
+      "failures": {
+        "success": 97,
+        "not_released": 1,
+        "barrier_collision": 2
+      },
+      "milestones": {
+        "ever_lifted": 100,
+        "ever_crossed": 100,
+        "ever_released": 99,
+        "retreated": 97
+      },
+      "first_contact_contexts": {
+        "after_crossing_far_side": 2
+      },
+      "first_contact_bodies": {
+        "panda": 2
+      },
+      "best_epoch": 76,
+      "best_validation_loss": 0.00308794854208827,
+      "final_validation_loss": 0.003235002513974905,
+      "final_training_loss": 0.0019961125450208782,
+      "training_seconds": 24.261559009552002
+    },
+    {
+      "condition": "gru33_floor",
+      "training_seed": 1,
+      "n": 100,
+      "strict": 96,
+      "native": 99,
+      "wilson95": [
+        0.9016292856411229,
+        0.984336696008452
+      ],
+      "failures": {
+        "success": 96,
+        "not_released": 1,
+        "barrier_collision": 1,
+        "grasp_failed": 1,
+        "unstable_placement": 1
+      },
+      "milestones": {
+        "ever_lifted": 99,
+        "ever_crossed": 99,
+        "ever_released": 98,
+        "retreated": 97
+      },
+      "first_contact_contexts": {
+        "after_crossing_far_side": 1
+      },
+      "first_contact_bodies": {
+        "panda": 1
+      },
+      "best_epoch": 74,
+      "best_validation_loss": 0.0032539162784814835,
+      "final_validation_loss": 0.0035941863898187876,
+      "final_training_loss": 0.0022614097746554763,
+      "training_seconds": 19.426352977752686
+    },
+    {
+      "condition": "gru33_floor",
+      "training_seed": 2,
+      "n": 100,
+      "strict": 97,
+      "native": 100,
+      "wilson95": [
+        0.9154806357094745,
+        0.9897454759759607
+      ],
+      "failures": {
+        "success": 97,
+        "no_retreat": 1,
+        "unstable_placement": 1,
+        "not_released": 1
+      },
+      "milestones": {
+        "ever_lifted": 100,
+        "ever_crossed": 100,
+        "ever_released": 99,
+        "retreated": 98
+      },
+      "first_contact_contexts": {},
+      "first_contact_bodies": {},
+      "best_epoch": 78,
+      "best_validation_loss": 0.0030768488068133593,
+      "final_validation_loss": 0.0033666084054857492,
+      "final_training_loss": 0.0017708949570078402,
+      "training_seconds": 18.770442008972168
+    },
+    {
+      "condition": "mlp33_floor",
+      "training_seed": 0,
+      "n": 100,
+      "strict": 2,
+      "native": 12,
+      "wilson95": [
+        0.005501967550162523,
+        0.07001179072854186
+      ],
+      "failures": {
+        "grasp_failed": 88,
+        "no_retreat": 5,
+        "barrier_collision": 5,
+        "success": 2
+      },
+      "milestones": {
+        "ever_lifted": 12,
+        "ever_crossed": 12,
+        "ever_released": 12,
+        "retreated": 2
+      },
+      "first_contact_contexts": {
+        "after_crossing_far_side": 5
+      },
+      "first_contact_bodies": {
+        "panda": 5
+      },
+      "best_epoch": 79,
+      "best_validation_loss": 0.005560470279306173,
+      "final_validation_loss": 0.005782291758805513,
+      "final_training_loss": 0.005381203500932332,
+      "training_seconds": 3.9873528480529785
+    },
+    {
+      "condition": "mlp33_floor",
+      "training_seed": 1,
+      "n": 100,
+      "strict": 45,
+      "native": 83,
+      "wilson95": [
+        0.3561453797951223,
+        0.5475539700255762
+      ],
+      "failures": {
+        "not_released": 9,
+        "no_retreat": 5,
+        "success": 45,
+        "barrier_collision": 22,
+        "unstable_placement": 10,
+        "grasp_failed": 9
+      },
+      "milestones": {
+        "ever_lifted": 90,
+        "ever_crossed": 86,
+        "ever_released": 73,
+        "retreated": 59
+      },
+      "first_contact_contexts": {
+        "after_crossing_far_side": 13,
+        "before_crossing": 9
+      },
+      "first_contact_bodies": {
+        "panda": 19,
+        "object": 3
+      },
+      "best_epoch": 74,
+      "best_validation_loss": 0.0053779855370521545,
+      "final_validation_loss": 0.005741436500102282,
+      "final_training_loss": 0.005096999585219854,
+      "training_seconds": 4.498676061630249
+    },
+    {
+      "condition": "mlp33_floor",
+      "training_seed": 2,
+      "n": 100,
+      "strict": 17,
+      "native": 65,
+      "wilson95": [
+        0.10893566114060066,
+        0.2554800476760086
+      ],
+      "failures": {
+        "barrier_collision": 25,
+        "not_released": 6,
+        "no_retreat": 16,
+        "unstable_placement": 14,
+        "grasp_failed": 21,
+        "success": 17,
+        "dropped_before_barrier": 1
+      },
+      "milestones": {
+        "ever_lifted": 71,
+        "ever_crossed": 68,
+        "ever_released": 58,
+        "retreated": 34
+      },
+      "first_contact_contexts": {
+        "before_crossing": 12,
+        "after_crossing_far_side": 13
+      },
+      "first_contact_bodies": {
+        "object": 5,
+        "panda": 20
+      },
+      "best_epoch": 68,
+      "best_validation_loss": 0.009232517331838608,
+      "final_validation_loss": 0.009372306987643242,
+      "final_training_loss": 0.005271012464811124,
+      "training_seconds": 5.085657835006714
+    },
+    {
+      "condition": "expert",
+      "training_seed": 0,
+      "n": 100,
+      "strict": 100,
+      "native": 100,
+      "wilson95": [
+        0.9630065017930163,
+        1.0
+      ],
+      "failures": {
+        "success": 100
+      },
+      "milestones": {
+        "ever_lifted": 100,
+        "ever_crossed": 100,
+        "ever_released": 100,
+        "retreated": 100
+      },
+      "first_contact_contexts": {},
+      "first_contact_bodies": {}
+    }
+  ],
+  "aggregate": [
+    {
+      "condition": "mlp22",
+      "strict_percent_mean": 21.666666666666668,
+      "strict_percent_sd": 3.2145502536643185,
+      "strict_percent_range": [
+        18,
+        24
+      ],
+      "native_percent_mean": 72.0
+    },
+    {
+      "condition": "gru33",
+      "strict_percent_mean": 88.66666666666667,
+      "strict_percent_sd": 4.509249752822894,
+      "strict_percent_range": [
+        84,
+        93
+      ],
+      "native_percent_mean": 98.66666666666667
+    },
+    {
+      "condition": "gru33_floor",
+      "strict_percent_mean": 96.66666666666667,
+      "strict_percent_sd": 0.5773502691896257,
+      "strict_percent_range": [
+        96,
+        97
+      ],
+      "native_percent_mean": 99.66666666666667
+    },
+    {
+      "condition": "mlp33_floor",
+      "strict_percent_mean": 21.333333333333332,
+      "strict_percent_sd": 21.82506204649447,
+      "strict_percent_range": [
+        2,
+        45
+      ],
+      "native_percent_mean": 53.333333333333336
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "reference": "gru33",
+      "revised": "gru33_floor",
+      "seed": 0,
+      "gained": 7,
+      "lost": 3,
+      "difference_percentage_points": 4,
+      "exact_mcnemar_p": 0.34375
+    },
+    {
+      "reference": "gru33",
+      "revised": "gru33_floor",
+      "seed": 1,
+      "gained": 10,
+      "lost": 3,
+      "difference_percentage_points": 7,
+      "exact_mcnemar_p": 0.09228515625
+    },
+    {
+      "reference": "gru33",
+      "revised": "gru33_floor",
+      "seed": 2,
+      "gained": 15,
+      "lost": 2,
+      "difference_percentage_points": 13,
+      "exact_mcnemar_p": 0.002349853515625
+    },
+    {
+      "reference": "mlp22",
+      "revised": "gru33",
+      "seed": 0,
+      "gained": 77,
+      "lost": 2,
+      "difference_percentage_points": 75,
+      "exact_mcnemar_p": 1.0458871665120482e-20
+    },
+    {
+      "reference": "mlp22",
+      "revised": "gru33",
+      "seed": 1,
+      "gained": 66,
+      "lost": 1,
+      "difference_percentage_points": 65,
+      "exact_mcnemar_p": 9.215718466126788e-19
+    },
+    {
+      "reference": "mlp22",
+      "revised": "gru33",
+      "seed": 2,
+      "gained": 68,
+      "lost": 7,
+      "difference_percentage_points": 61,
+      "exact_mcnemar_p": 1.1671767873150363e-13
+    },
+    {
+      "reference": "mlp33_floor",
+      "revised": "gru33_floor",
+      "seed": 0,
+      "gained": 95,
+      "lost": 0,
+      "difference_percentage_points": 95,
+      "exact_mcnemar_p": 5.048709793414476e-29
+    },
+    {
+      "reference": "mlp33_floor",
+      "revised": "gru33_floor",
+      "seed": 1,
+      "gained": 53,
+      "lost": 2,
+      "difference_percentage_points": 51,
+      "exact_mcnemar_p": 8.554268404736831e-14
+    },
+    {
+      "reference": "mlp33_floor",
+      "revised": "gru33_floor",
+      "seed": 2,
+      "gained": 81,
+      "lost": 1,
+      "difference_percentage_points": 80,
+      "exact_mcnemar_p": 3.432799542095065e-23
+    }
+  ],
+  "inference_note": "Per-model Wilson intervals and unadjusted paired tests; shared scenes/training dataset prevent treating 300 runs as independent."
+}

@@ -1,0 +1,7 @@
+Hi Aayush,
+
+Yes, I still have the recovery oracle source and the original experiment outputs. I have put together a package containing the source and experiment scripts, the per-scene held-out results and trajectories, the aggregation-round labels and logs, and a note answering the six reviewer questions with code references. Please start with README_START_HERE.md and REVIEWER_DETAILS.md.
+
+Two details are important for the response. The original synchronization test checked phase agreement (2,239/2,239 matches), not equality of every internal memory variable. Also, the perturbations were triggered by entry into CLOSE or CROSS_BARRIER, rather than a fixed global step. Since the original logs did not retain the step indices, I included a separately labelled instrumented replay that reproduces the 120 original validation outcomes and records the per-scene intervention steps. It also shows that the recovery oracle and nominal expert intentionally use different release targets.
+
+The original results are unchanged, including the single-round learner-only decrease from 97/100 to 85/100. Please use those learner-only results separately from the teacher-mixture collection results when answering the reviewer.

@@ -1,0 +1,10 @@
+{
+  "baseline_strict": 97,
+  "dagger_strict": 85,
+  "episodes": 100,
+  "improved": 3,
+  "regressed": 15,
+  "difference_percentage_points": -12,
+  "exact_paired_mcnemar_two_sided_p": 0.007537841796875,
+  "scope": "Single fixed training seed, one predeclared beta=0.5 aggregation round; no post-test adjustment"
+}

@@ -1,0 +1,165 @@
+{
+  "diagnostic_date": "2026-10-16",
+  "started_utc": "2026-10-17T00:04:43.186596+00:00",
+  "status": "complete",
+  "provenance": "New diagnostic replay, not an original validation log",
+  "source_root": "/Users/yubocai/Desktop/Auyush/imitation-learning-grasp",
+  "source_sha256": {
+    "scripts/run_revision_dagger.py": "e6d3f9353c7dba304ffba78e338bd7c946fb80d97fd10cd87f34e4fa4dc0ac7c",
+    "tests/test_recovery_oracle.py": "bef662ef4ae67c76b7a1cd47c86ca21508d83312e11fb6a2dcdde514d3e2311f",
+    "src/ilgrasp/experts/recovery.py": "2bedbae95ae6013246b0ccbe42b5fcfa8d32cebf0438d48214d02b2f4dedeee0",
+    "src/ilgrasp/experts/verified.py": "81f294c8e3f333a211083ee88e8662d664a9f2e15cc99b376685f5ea704ff3b1",
+    "src/ilgrasp/sim/verified_task.py": "eba766e774be2c3af1caf23a715a7c3776bc490d7e8ebf7eb37136e005ee91b6",
+    "src/ilgrasp/sim/observation.py": "ce0c919b856d57890092e91edc7ab68cdad2dee6d9301e4dce3abbbeb674d4cb",
+    "src/ilgrasp/sim/env.py": "47a1031e73ca753b713186a1a0eb326907549de4188d9947593d7a37554a30d3"
+  },
+  "diagnostic_script_sha256": "75c0b78499fdeb187431514996ba12b122288f95fdf375d0454f6a0d4bf24f84",
+  "historical_results_sha256": "e5cfd60a389778b709cde766a7917fd093979e412b6a4725ec2152dcf9cb84c4",
+  "historical_validation_manifest_sha256": "e8e56563d8fd9d21fdc41a13b8e7b67959ab5fd7cbb66eeeb56a693ad36f57d5",
+  "historical_oracle_sha256": "2bedbae95ae6013246b0ccbe42b5fcfa8d32cebf0438d48214d02b2f4dedeee0",
+  "oracle_source_matches_historical_hash": true,
+  "other_historical_source_hashes": "Not recorded in original validation manifest; cannot hash-verify those against its execution",
+  "configs": {
+    "expert": {
+      "hover_height": 0.12,
+      "grasp_offset": 0.015,
+      "test_lift": 0.045,
+      "safe_z": 0.17,
+      "pre_cross_y": -0.075,
+      "post_cross_y": 0.075,
+      "position_tolerance": 0.018,
+      "place_tolerance": 0.035,
+      "action_gain": 20.0,
+      "close_steps": 10,
+      "open_steps": 12,
+      "test_timeout": 18,
+      "open_action": 1.0,
+      "close_action": -1.0,
+      "home": [
+        0.04,
+        0.0,
+        0.2
+      ]
+    },
+    "task": {
+      "max_episode_steps": 180,
+      "object_x_range": [
+        -0.09,
+        0.09
+      ],
+      "object_y_range": [
+        -0.2,
+        -0.15
+      ],
+      "goal_x_range": [
+        -0.09,
+        0.09
+      ],
+      "goal_y_range": [
+        0.15,
+        0.2
+      ],
+      "table_object_z": 0.02,
+      "barrier_half_extents": [
+        0.2,
+        0.018,
+        0.04
+      ],
+      "barrier_color": [
+        0.12,
+        0.32,
+        0.82,
+        1.0
+      ],
+      "lift_height": 0.1,
+      "crossed_y": 0.06,
+      "goal_xy_tolerance": 0.035,
+      "goal_z_tolerance": 0.025,
+      "open_gripper_width": 0.055,
+      "retreat_distance": 0.12,
+      "retreat_height": 0.12,
+      "stable_speed": 0.025,
+      "stable_spin": 1.0,
+      "required_stable_steps": 12
+    }
+  },
+  "config_sha256": {
+    "expert": "094b221bbfd7244de7df835e4f2ed046d109a250c19fb08e96030179ca6907de",
+    "task": "e461501af095f89d8b8561f5cdcc8899e91b08dad9e8e0a880c59a9a95566178"
+  },
+  "historical_config_hash_comparison": "Original validation manifest has no serialized controller/task configs or hashes",
+  "versions": {
+    "torch": "2.13.0",
+    "numpy": "2.5.2",
+    "panda-gym": "3.0.7",
+    "gymnasium": "1.3.0",
+    "pybullet": "3.2.5"
+  },
+  "historical_study_versions": {
+    "torch": "2.13.0",
+    "numpy": "2.5.2",
+    "panda-gym": "3.0.7",
+    "gymnasium": "1.3.0",
+    "pybullet": "3.2.5"
+  },
+  "python": "3.12.13 | packaged by conda-forge | (main, Aug 11 2026, 10:25:41) [Clang 19.1.7 ]",
+  "platform": "macOS-26.6.1-arm64-arm-64bit",
+  "memory_comparison": {
+    "fields": [
+      "phase",
+      "phase_steps",
+      "grasp_offset",
+      "grasp_target",
+      "release_target"
+    ],
+    "atol": 1e-08,
+    "rtol": 0.0,
+    "none_rule": "Equal iff both are None"
+  },
+  "step_convention": {
+    "pre_step": "0-based executed-action count before query",
+    "executed_step": "1-based action number, equal to post-step environment step"
+  },
+  "reset_mode": "independent",
+  "seeds": [
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026,
+    2027,
+    2028,
+    2029
+  ],
+  "versions_match_historical_study": true,
+  "completed_utc": "2026-10-17T00:05:04.970032+00:00",
+  "output_sha256": {
+    "step_records.jsonl": "429bbd431339a9eb1442b44a54cdb4402ea8f6674d0fb15d114b1147e05cf864",
+    "diagnostic_episode_results.json": "e5cfd60a389778b709cde766a7917fd093979e412b6a4725ec2152dcf9cb84c4",
+    "intervention_steps.json": "0b8c39c5ff57ebd8e39b68ca3cb255ee92ac3a014e4ea475e5f6b9e35f19ca53",
+    "intervention_steps.csv": "69ef2dfe0435c3e9f5eef572503daef9890702eb7e2f22f8cb1b2255cbb6ef9e",
+    "diagnostic_summary.json": "c2a4b93cbd0d110fea5ae528d8cad55c059992a0ad1b67f5b803b11742c13bb7"
+  }
+}

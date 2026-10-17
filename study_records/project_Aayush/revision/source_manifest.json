@@ -1,0 +1,62 @@
+{
+  "scope": "Local revision and executed simulation evidence; no external submission",
+  "human_submission_approval": "not requested; no submission performed",
+  "evidence": [
+    {
+      "id": "E001",
+      "name": "historical_notebook",
+      "path": "/Users/yubocai/Desktop/MIT/LaunchLab/Auyush/project_Aayush/revision/original/04_verified_expert_pipeline_student_en_fixed.ipynb",
+      "sha256": "4f9467b39ad0d198eb9b7dc9713a3fcfc98d71d5e4a5cfeed0d4daeed1b85a71",
+      "verification": "automated local inspection; no human-verification claim"
+    },
+    {
+      "id": "E002",
+      "name": "new_demo_data",
+      "path": "/Users/yubocai/Desktop/MIT/LaunchLab/Auyush/imitation-learning-grasp/artifacts/revision_study/demos.npz",
+      "sha256": "14f4d294cdd82d251f5a7922839ba66ef965174a0782abdb0097849ecd08df7b",
+      "verification": "automated local inspection; no human-verification claim"
+    },
+    {
+      "id": "E003",
+      "name": "main_results",
+      "path": "/Users/yubocai/Desktop/MIT/LaunchLab/Auyush/project_Aayush/revision/study_summary.json",
+      "sha256": "1afebe0f98547ba912526655ff6dbf33294f4d4027330d8350005e2a4da76fb6",
+      "verification": "automated local inspection; no human-verification claim"
+    },
+    {
+      "id": "E004",
+      "name": "reset_audit",
+      "path": "/Users/yubocai/Desktop/MIT/LaunchLab/Auyush/imitation-learning-grasp/artifacts/revision_study/reset_audit.json",
+      "sha256": "f1cb8540c2404b3d6898a90da7ffa3b8e3448ef0e6cac5bd275d38edf8915317",
+      "verification": "automated local inspection; no human-verification claim"
+    },
+    {
+      "id": "E005",
+      "name": "neighbor_results",
+      "path": "/Users/yubocai/Desktop/MIT/LaunchLab/Auyush/project_Aayush/revision/neighbor_results.json",
+      "sha256": "8c31f09278cb0bf2da25f28e9cd0b5b549e6cc1771903f32c47fe1bb5d6149bd",
+      "verification": "automated local inspection; no human-verification claim"
+    },
+    {
+      "id": "E006",
+      "name": "normalization_audit",
+      "path": "/Users/yubocai/Desktop/MIT/LaunchLab/Auyush/project_Aayush/revision/normalization_audit.json",
+      "sha256": "09b5f8b086b545dbd214b3f8256c08064dbb8826cdde74d46275f58a2b2228d5",
+      "verification": "automated local inspection; no human-verification claim"
+    },
+    {
+      "id": "E007",
+      "name": "dagger_results",
+      "path": "/Users/yubocai/Desktop/MIT/LaunchLab/Auyush/imitation-learning-grasp/artifacts/revision_study/dagger_paired_comparison.json",
+      "sha256": "b325b8357215a04cfb047d967645fbe505fc2850e1b4115a8fc8afac8b4b2aa2",
+      "verification": "automated local inspection; no human-verification claim"
+    },
+    {
+      "id": "E008",
+      "name": "notebook_execution_check",
+      "path": "/Users/yubocai/Desktop/MIT/LaunchLab/Auyush/project_Aayush/revision/notebook_execution_check.json",
+      "sha256": "fb82de020f4764c35d0169e7c33f00d1f061256c99b4b14eb152c2c29e926925",
+      "verification": "automated local inspection; no human-verification claim"
+    }
+  ]
+}

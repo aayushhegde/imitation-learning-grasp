@@ -1,0 +1,38 @@
+{
+  "seed": 10000,
+  "intervening_seed": 10001,
+  "action_count": 73,
+  "same_actions_replayed": true,
+  "canonical_fresh_clients": {
+    "exactly_equal": true,
+    "reset_max_abs": 0.0,
+    "first_step_max_abs": 0.0,
+    "trajectory_max_abs": 0.0,
+    "object_position_max_abs_m": 0.0
+  },
+  "canonical_retained_history": {
+    "exactly_equal": false,
+    "reset_max_abs": 0.0,
+    "first_step_max_abs": 0.007596955634653568,
+    "trajectory_max_abs": 38.90546417236328,
+    "object_position_max_abs_m": 0.003451600670814514
+  },
+  "independent_repeated": {
+    "exactly_equal": true,
+    "reset_max_abs": 0.0,
+    "first_step_max_abs": 0.0,
+    "trajectory_max_abs": 0.0,
+    "object_position_max_abs_m": 0.0
+  },
+  "versions": {
+    "numpy": "2.5.2",
+    "pybullet": "3.2.5",
+    "panda-gym": "3.0.7",
+    "gymnasium": "1.3.0"
+  },
+  "source_sha256": {
+    "scripts/audit_reset_reproducibility.py": "2dbdc8bd88f93151d147273da0458395aaa790a0e2528db61464bc78e7417d45",
+    "src/ilgrasp/sim/verified_task.py": "eba766e774be2c3af1caf23a715a7c3776bc490d7e8ebf7eb37136e005ee91b6"
+  },
+  "interpretation": "Scene reset preserves Bullet world history; rebuilding removes the measured order effect. This audit does not identify an individual internal solver cache."
+}

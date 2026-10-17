@@ -1,0 +1,1954 @@
+{
+  "dataset": "/Users/yubocai/Desktop/MIT/LaunchLab/Auyush/imitation-learning-grasp/artifacts/revision_study/demos.npz",
+  "dataset_sha256": "14f4d294cdd82d251f5a7922839ba66ef965174a0782abdb0097849ecd08df7b",
+  "protocol": {
+    "split_seed": 7,
+    "epsilon_obs": 0.5,
+    "epsilon_action": 0.5,
+    "neighbors": 1,
+    "bootstrap_draws": 2000,
+    "bootstrap_seed": 20260925,
+    "cross_bootstrap_reference_pool": "fixed"
+  },
+  "train_ids": [
+    1,
+    3,
+    6,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    36,
+    37,
+    38,
+    39,
+    40,
+    42,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    56,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    66,
+    67,
+    68,
+    69,
+    70,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    79,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    101,
+    102,
+    104,
+    105,
+    106,
+    107,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    116,
+    118,
+    119,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    141,
+    142,
+    143,
+    146,
+    147,
+    148,
+    149,
+    150,
+    152,
+    153,
+    154,
+    155,
+    157,
+    158,
+    161,
+    162,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199
+  ],
+  "validation_ids": [
+    0,
+    2,
+    4,
+    5,
+    7,
+    20,
+    21,
+    28,
+    35,
+    41,
+    43,
+    54,
+    55,
+    57,
+    65,
+    71,
+    78,
+    80,
+    100,
+    103,
+    108,
+    115,
+    117,
+    120,
+    140,
+    144,
+    145,
+    151,
+    156,
+    159,
+    160,
+    163,
+    164,
+    173,
+    174,
+    182,
+    190,
+    191,
+    192,
+    193
+  ],
+  "training_transitions": 11869,
+  "boundaries": [
+    {
+      "boundary": "approach->descend",
+      "mechanism": "geometric",
+      "comparison": "adjacent",
+      "n_pairs": 160,
+      "n_query_episodes": 160,
+      "n_close_pairs": 57,
+      "n_inconsistent_close_pairs": 57,
+      "observation_distance_q25_median_q75": [
+        0.3958671359378867,
+        0.647474453899419,
+        1.3292378566789698
+      ],
+      "action_distance_q25_median_q75": [
+        1.031472623348236,
+        1.0675151348114014,
+        1.1196096539497375
+      ],
+      "guard_residual_m_q25_median_q75": [
+        -0.013727105607805264,
+        -0.012218524108628278,
+        -0.008952932997562262
+      ],
+      "close_neighbor_rate": {
+        "value": 0.35625,
+        "ci95": [
+          0.28125,
+          0.43125
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      }
+    },
+    {
+      "boundary": "approach->descend",
+      "mechanism": "geometric",
+      "comparison": "cross_forward",
+      "n_pairs": 160,
+      "n_query_episodes": 160,
+      "n_close_pairs": 20,
+      "n_inconsistent_close_pairs": 20,
+      "observation_distance_q25_median_q75": [
+        0.6637320770707178,
+        0.879012464397508,
+        1.4272624920558206
+      ],
+      "action_distance_q25_median_q75": [
+        1.0305357575416565,
+        1.0675273537635803,
+        1.1228550672531128
+      ],
+      "guard_residual_m_q25_median_q75": [
+        -0.013727105607805264,
+        -0.012218524108628278,
+        -0.008952932997562262
+      ],
+      "close_neighbor_rate": {
+        "value": 0.125,
+        "ci95": [
+          0.075,
+          0.18125
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      }
+    },
+    {
+      "boundary": "approach->descend",
+      "mechanism": "geometric",
+      "comparison": "cross_reverse",
+      "n_pairs": 160,
+      "n_query_episodes": 160,
+      "n_close_pairs": 22,
+      "n_inconsistent_close_pairs": 22,
+      "observation_distance_q25_median_q75": [
+        0.6172140377407521,
+        0.7241098545700019,
+        0.822699861213171
+      ],
+      "action_distance_q25_median_q75": [
+        1.0105209350585938,
+        1.0474559664726257,
+        1.067266434431076
+      ],
+      "guard_residual_m_q25_median_q75": [
+        -0.013727105607805264,
+        -0.012218524108628278,
+        -0.008952932997562262
+      ],
+      "close_neighbor_rate": {
+        "value": 0.1375,
+        "ci95": [
+          0.0875,
+          0.19375
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      }
+    },
+    {
+      "boundary": "descend->close",
+      "mechanism": "geometric",
+      "comparison": "adjacent",
+      "n_pairs": 160,
+      "n_query_episodes": 160,
+      "n_close_pairs": 0,
+      "n_inconsistent_close_pairs": 0,
+      "observation_distance_q25_median_q75": [
+        0.8937030105324915,
+        0.9275712340002666,
+        1.1794670834750671
+      ],
+      "action_distance_q25_median_q75": [
+        2.0157113671302795,
+        2.017864465713501,
+        2.0198113918304443
+      ],
+      "guard_residual_m_q25_median_q75": [
+        -0.010993932740634565,
+        -0.010736913675555782,
+        -0.008963955739433144
+      ],
+      "close_neighbor_rate": {
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": null,
+        "ci95": null,
+        "bootstrap_nonempty_draws": 0
+      }
+    },
+    {
+      "boundary": "descend->close",
+      "mechanism": "geometric",
+      "comparison": "cross_forward",
+      "n_pairs": 160,
+      "n_query_episodes": 160,
+      "n_close_pairs": 0,
+      "n_inconsistent_close_pairs": 0,
+      "observation_distance_q25_median_q75": [
+        0.9983898294460136,
+        1.0621987321708495,
+        1.2876764377659913
+      ],
+      "action_distance_q25_median_q75": [
+        2.015442192554474,
+        2.0178706645965576,
+        2.019399106502533
+      ],
+      "guard_residual_m_q25_median_q75": [
+        -0.010993932740634565,
+        -0.010736913675555782,
+        -0.008963955739433144
+      ],
+      "close_neighbor_rate": {
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": null,
+        "ci95": null,
+        "bootstrap_nonempty_draws": 0
+      }
+    },
+    {
+      "boundary": "descend->close",
+      "mechanism": "geometric",
+      "comparison": "cross_reverse",
+      "n_pairs": 160,
+      "n_query_episodes": 160,
+      "n_close_pairs": 0,
+      "n_inconsistent_close_pairs": 0,
+      "observation_distance_q25_median_q75": [
+        0.9890576422967573,
+        1.0510829937914323,
+        1.21189184331368
+      ],
+      "action_distance_q25_median_q75": [
+        2.015829384326935,
+        2.017567992210388,
+        2.018838047981262
+      ],
+      "guard_residual_m_q25_median_q75": [
+        -0.010993932740634565,
+        -0.010736913675555782,
+        -0.008963955739433144
+      ],
+      "close_neighbor_rate": {
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": null,
+        "ci95": null,
+        "bootstrap_nonempty_draws": 0
+      }
+    },
+    {
+      "boundary": "close->test_grasp",
+      "mechanism": "timed",
+      "comparison": "adjacent",
+      "n_pairs": 160,
+      "n_query_episodes": 160,
+      "n_close_pairs": 160,
+      "n_inconsistent_close_pairs": 160,
+      "observation_distance_q25_median_q75": [
+        0.006877815243639957,
+        0.019251065237503417,
+        0.03458402388670206
+      ],
+      "action_distance_q25_median_q75": [
+        0.8999777734279633,
+        0.9000061750411987,
+        0.9000578820705414
+      ],
+      "guard_residual_m_q25_median_q75": null,
+      "close_neighbor_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      }
+    },
+    {
+      "boundary": "close->test_grasp",
+      "mechanism": "timed",
+      "comparison": "cross_forward",
+      "n_pairs": 160,
+      "n_query_episodes": 160,
+      "n_close_pairs": 21,
+      "n_inconsistent_close_pairs": 21,
+      "observation_distance_q25_median_q75": [
+        0.551178952455605,
+        0.6602858069790165,
+        0.8111580658583796
+      ],
+      "action_distance_q25_median_q75": [
+        0.8997429013252258,
+        0.8999756872653961,
+        0.9003005772829056
+      ],
+      "guard_residual_m_q25_median_q75": null,
+      "close_neighbor_rate": {
+        "value": 0.13125,
+        "ci95": [
+          0.08125,
+          0.1875
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      }
+    },
+    {
+      "boundary": "close->test_grasp",
+      "mechanism": "timed",
+      "comparison": "cross_reverse",
+      "n_pairs": 160,
+      "n_query_episodes": 160,
+      "n_close_pairs": 21,
+      "n_inconsistent_close_pairs": 21,
+      "observation_distance_q25_median_q75": [
+        0.5525176643376128,
+        0.6643792154576835,
+        0.8117835894863915
+      ],
+      "action_distance_q25_median_q75": [
+        0.8998104333877563,
+        0.8999839425086975,
+        0.9003038704395294
+      ],
+      "guard_residual_m_q25_median_q75": null,
+      "close_neighbor_rate": {
+        "value": 0.13125,
+        "ci95": [
+          0.08125,
+          0.18125
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      }
+    },
+    {
+      "boundary": "test_grasp->lift_clear",
+      "mechanism": "geometric",
+      "comparison": "adjacent",
+      "n_pairs": 160,
+      "n_query_episodes": 160,
+      "n_close_pairs": 17,
+      "n_inconsistent_close_pairs": 17,
+      "observation_distance_q25_median_q75": [
+        2.609752309276306,
+        3.0232906222598395,
+        3.34831108807995
+      ],
+      "action_distance_q25_median_q75": [
+        0.7373111695051193,
+        0.7733451724052429,
+        0.8012563586235046
+      ],
+      "guard_residual_m_q25_median_q75": [
+        -0.012926599755883214,
+        -0.0047846276313066455,
+        -0.0029765607789158793
+      ],
+      "close_neighbor_rate": {
+        "value": 0.10625,
+        "ci95": [
+          0.05625,
+          0.15625
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      }
+    },
+    {
+      "boundary": "test_grasp->lift_clear",
+      "mechanism": "geometric",
+      "comparison": "cross_forward",
+      "n_pairs": 160,
+      "n_query_episodes": 160,
+      "n_close_pairs": 0,
+      "n_inconsistent_close_pairs": 0,
+      "observation_distance_q25_median_q75": [
+        2.7565027037963343,
+        3.1257211044201796,
+        3.461984673362911
+      ],
+      "action_distance_q25_median_q75": [
+        0.7373111695051193,
+        0.7733451724052429,
+        0.8012563586235046
+      ],
+      "guard_residual_m_q25_median_q75": [
+        -0.012926599755883214,
+        -0.0047846276313066455,
+        -0.0029765607789158793
+      ],
+      "close_neighbor_rate": {
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": null,
+        "ci95": null,
+        "bootstrap_nonempty_draws": 0
+      }
+    },
+    {
+      "boundary": "test_grasp->lift_clear",
+      "mechanism": "geometric",
+      "comparison": "cross_reverse",
+      "n_pairs": 160,
+      "n_query_episodes": 160,
+      "n_close_pairs": 0,
+      "n_inconsistent_close_pairs": 0,
+      "observation_distance_q25_median_q75": [
+        1.2170978291728487,
+        1.9179829029728022,
+        2.682222271501313
+      ],
+      "action_distance_q25_median_q75": [
+        0.8092983961105347,
+        0.9553701877593994,
+        0.9560795426368713
+      ],
+      "guard_residual_m_q25_median_q75": [
+        -0.012926599755883214,
+        -0.0047846276313066455,
+        -0.0029765607789158793
+      ],
+      "close_neighbor_rate": {
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": null,
+        "ci95": null,
+        "bootstrap_nonempty_draws": 0
+      }
+    },
+    {
+      "boundary": "lift_clear->pre_cross",
+      "mechanism": "geometric",
+      "comparison": "adjacent",
+      "n_pairs": 160,
+      "n_query_episodes": 160,
+      "n_close_pairs": 49,
+      "n_inconsistent_close_pairs": 49,
+      "observation_distance_q25_median_q75": [
+        0.46771022726985173,
+        0.587609945941152,
+        0.6782477493357475
+      ],
+      "action_distance_q25_median_q75": [
+        1.1403860449790955,
+        1.415138304233551,
+        1.415635734796524
+      ],
+      "guard_residual_m_q25_median_q75": [
+        -0.014738264262676225,
+        -0.01435729372501372,
+        -0.013960114449262605
+      ],
+      "close_neighbor_rate": {
+        "value": 0.30625,
+        "ci95": [
+          0.2375,
+          0.375
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      }
+    },
+    {
+      "boundary": "lift_clear->pre_cross",
+      "mechanism": "geometric",
+      "comparison": "cross_forward",
+      "n_pairs": 160,
+      "n_query_episodes": 160,
+      "n_close_pairs": 0,
+      "n_inconsistent_close_pairs": 0,
+      "observation_distance_q25_median_q75": [
+        1.0048763779184624,
+        1.2110936723512358,
+        1.594411427167278
+      ],
+      "action_distance_q25_median_q75": [
+        1.140546053647995,
+        1.4151224493980408,
+        1.4156494140625
+      ],
+      "guard_residual_m_q25_median_q75": [
+        -0.014738264262676225,
+        -0.01435729372501372,
+        -0.013960114449262605
+      ],
+      "close_neighbor_rate": {
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": null,
+        "ci95": null,
+        "bootstrap_nonempty_draws": 0
+      }
+    },
+    {
+      "boundary": "lift_clear->pre_cross",
+      "mechanism": "geometric",
+      "comparison": "cross_reverse",
+      "n_pairs": 160,
+      "n_query_episodes": 160,
+      "n_close_pairs": 0,
+      "n_inconsistent_close_pairs": 0,
+      "observation_distance_q25_median_q75": [
+        1.007586102699655,
+        1.1941565376699237,
+        1.4176499792059793
+      ],
+      "action_distance_q25_median_q75": [
+        1.1384029984474182,
+        1.4151224493980408,
+        1.415659338235855
+      ],
+      "guard_residual_m_q25_median_q75": [
+        -0.014738264262676225,
+        -0.01435729372501372,
+        -0.013960114449262605
+      ],
+      "close_neighbor_rate": {
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": null,
+        "ci95": null,
+        "bootstrap_nonempty_draws": 0
+      }
+    },
+    {
+      "boundary": "pre_cross->cross_barrier",
+      "mechanism": "geometric",
+      "comparison": "adjacent",
+      "n_pairs": 160,
+      "n_query_episodes": 160,
+      "n_close_pairs": 0,
+      "n_inconsistent_close_pairs": 0,
+      "observation_distance_q25_median_q75": [
+        1.5173543980015514,
+        3.301167287126784,
+        4.66809197845217
+      ],
+      "action_distance_q25_median_q75": [
+        0.861531063914299,
+        0.9323095679283142,
+        0.968453586101532
+      ],
+      "guard_residual_m_q25_median_q75": [
+        -0.01305430012785784,
+        -0.009984477565496697,
+        -0.005412576395325016
+      ],
+      "close_neighbor_rate": {
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": null,
+        "ci95": null,
+        "bootstrap_nonempty_draws": 0
+      }
+    },
+    {
+      "boundary": "pre_cross->cross_barrier",
+      "mechanism": "geometric",
+      "comparison": "cross_forward",
+      "n_pairs": 160,
+      "n_query_episodes": 160,
+      "n_close_pairs": 0,
+      "n_inconsistent_close_pairs": 0,
+      "observation_distance_q25_median_q75": [
+        1.6153622644858048,
+        3.1617030004730964,
+        4.32215866587047
+      ],
+      "action_distance_q25_median_q75": [
+        0.8642050176858902,
+        0.9360905885696411,
+        0.9690299779176712
+      ],
+      "guard_residual_m_q25_median_q75": [
+        -0.01305430012785784,
+        -0.009984477565496697,
+        -0.005412576395325016
+      ],
+      "close_neighbor_rate": {
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": null,
+        "ci95": null,
+        "bootstrap_nonempty_draws": 0
+      }
+    },
+    {
+      "boundary": "pre_cross->cross_barrier",
+      "mechanism": "geometric",
+      "comparison": "cross_reverse",
+      "n_pairs": 160,
+      "n_query_episodes": 160,
+      "n_close_pairs": 0,
+      "n_inconsistent_close_pairs": 0,
+      "observation_distance_q25_median_q75": [
+        1.3865585026720892,
+        1.6757540907044377,
+        2.00657024252928
+      ],
+      "action_distance_q25_median_q75": [
+        0.9389780908823013,
+        0.948798269033432,
+        0.9813934117555618
+      ],
+      "guard_residual_m_q25_median_q75": [
+        -0.01305430012785784,
+        -0.009984477565496697,
+        -0.005412576395325016
+      ],
+      "close_neighbor_rate": {
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": null,
+        "ci95": null,
+        "bootstrap_nonempty_draws": 0
+      }
+    },
+    {
+      "boundary": "cross_barrier->above_goal",
+      "mechanism": "geometric",
+      "comparison": "adjacent",
+      "n_pairs": 160,
+      "n_query_episodes": 160,
+      "n_close_pairs": 0,
+      "n_inconsistent_close_pairs": 0,
+      "observation_distance_q25_median_q75": [
+        2.203251178069566,
+        2.6730351504893064,
+        3.0545585989356385
+      ],
+      "action_distance_q25_median_q75": [
+        0.9042526036500931,
+        0.9166659414768219,
+        0.9321598559617996
+      ],
+      "guard_residual_m_q25_median_q75": [
+        -0.014465279831686488,
+        -0.013768091422925167,
+        -0.013161292555319698
+      ],
+      "close_neighbor_rate": {
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": null,
+        "ci95": null,
+        "bootstrap_nonempty_draws": 0
+      }
+    },
+    {
+      "boundary": "cross_barrier->above_goal",
+      "mechanism": "geometric",
+      "comparison": "cross_forward",
+      "n_pairs": 160,
+      "n_query_episodes": 160,
+      "n_close_pairs": 0,
+      "n_inconsistent_close_pairs": 0,
+      "observation_distance_q25_median_q75": [
+        2.337463469180493,
+        2.7561576836142834,
+        3.0778174993712524
+      ],
+      "action_distance_q25_median_q75": [
+        0.9042570739984512,
+        0.9166573584079742,
+        0.9321776032447815
+      ],
+      "guard_residual_m_q25_median_q75": [
+        -0.014465279831686488,
+        -0.013768091422925167,
+        -0.013161292555319698
+      ],
+      "close_neighbor_rate": {
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": null,
+        "ci95": null,
+        "bootstrap_nonempty_draws": 0
+      }
+    },
+    {
+      "boundary": "cross_barrier->above_goal",
+      "mechanism": "geometric",
+      "comparison": "cross_reverse",
+      "n_pairs": 160,
+      "n_query_episodes": 160,
+      "n_close_pairs": 0,
+      "n_inconsistent_close_pairs": 0,
+      "observation_distance_q25_median_q75": [
+        2.2120271835859815,
+        2.618311636771918,
+        2.9270766849132017
+      ],
+      "action_distance_q25_median_q75": [
+        0.9045064747333527,
+        0.9167490005493164,
+        0.926020011305809
+      ],
+      "guard_residual_m_q25_median_q75": [
+        -0.014465279831686488,
+        -0.013768091422925167,
+        -0.013161292555319698
+      ],
+      "close_neighbor_rate": {
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": null,
+        "ci95": null,
+        "bootstrap_nonempty_draws": 0
+      }
+    },
+    {
+      "boundary": "above_goal->lower",
+      "mechanism": "geometric",
+      "comparison": "adjacent",
+      "n_pairs": 160,
+      "n_query_episodes": 160,
+      "n_close_pairs": 0,
+      "n_inconsistent_close_pairs": 0,
+      "observation_distance_q25_median_q75": [
+        2.131664783085887,
+        3.04984727089223,
+        3.5148535390234845
+      ],
+      "action_distance_q25_median_q75": [
+        1.0061868131160736,
+        1.0124552845954895,
+        1.0251962840557098
+      ],
+      "guard_residual_m_q25_median_q75": [
+        -0.012538890184122945,
+        -0.010991654102983573,
+        -0.007216714765246472
+      ],
+      "close_neighbor_rate": {
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": null,
+        "ci95": null,
+        "bootstrap_nonempty_draws": 0
+      }
+    },
+    {
+      "boundary": "above_goal->lower",
+      "mechanism": "geometric",
+      "comparison": "cross_forward",
+      "n_pairs": 160,
+      "n_query_episodes": 160,
+      "n_close_pairs": 1,
+      "n_inconsistent_close_pairs": 1,
+      "observation_distance_q25_median_q75": [
+        1.9857120665891455,
+        3.006809103070905,
+        3.404524298947333
+      ],
+      "action_distance_q25_median_q75": [
+        1.0039449036121368,
+        1.008661925792694,
+        1.0222525894641876
+      ],
+      "guard_residual_m_q25_median_q75": [
+        -0.012538890184122945,
+        -0.010991654102983573,
+        -0.007216714765246472
+      ],
+      "close_neighbor_rate": {
+        "value": 0.00625,
+        "ci95": [
+          0.0,
+          0.01875
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 1292
+      }
+    },
+    {
+      "boundary": "above_goal->lower",
+      "mechanism": "geometric",
+      "comparison": "cross_reverse",
+      "n_pairs": 160,
+      "n_query_episodes": 160,
+      "n_close_pairs": 1,
+      "n_inconsistent_close_pairs": 1,
+      "observation_distance_q25_median_q75": [
+        1.4054988631144998,
+        1.8145819454832774,
+        2.2898100716902547
+      ],
+      "action_distance_q25_median_q75": [
+        1.0010630786418915,
+        1.0036774277687073,
+        1.0069854855537415
+      ],
+      "guard_residual_m_q25_median_q75": [
+        -0.012538890184122945,
+        -0.010991654102983573,
+        -0.007216714765246472
+      ],
+      "close_neighbor_rate": {
+        "value": 0.00625,
+        "ci95": [
+          0.0,
+          0.01875
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 1291
+      }
+    },
+    {
+      "boundary": "lower->open",
+      "mechanism": "geometric",
+      "comparison": "adjacent",
+      "n_pairs": 160,
+      "n_query_episodes": 160,
+      "n_close_pairs": 0,
+      "n_inconsistent_close_pairs": 0,
+      "observation_distance_q25_median_q75": [
+        8.418850064359258,
+        8.732570495515475,
+        9.603327997684598
+      ],
+      "action_distance_q25_median_q75": [
+        2.044019639492035,
+        2.0450621843338013,
+        2.0477312803268433
+      ],
+      "guard_residual_m_q25_median_q75": [
+        -0.016467022300281308,
+        -0.015659037531811262,
+        -0.014902735072706747
+      ],
+      "close_neighbor_rate": {
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": null,
+        "ci95": null,
+        "bootstrap_nonempty_draws": 0
+      }
+    },
+    {
+      "boundary": "lower->open",
+      "mechanism": "geometric",
+      "comparison": "cross_forward",
+      "n_pairs": 160,
+      "n_query_episodes": 160,
+      "n_close_pairs": 0,
+      "n_inconsistent_close_pairs": 0,
+      "observation_distance_q25_median_q75": [
+        8.089830294732442,
+        8.276737570081917,
+        8.571012859890239
+      ],
+      "action_distance_q25_median_q75": [
+        2.0445077419281006,
+        2.050084352493286,
+        2.058355987071991
+      ],
+      "guard_residual_m_q25_median_q75": [
+        -0.016467022300281308,
+        -0.015659037531811262,
+        -0.014902735072706747
+      ],
+      "close_neighbor_rate": {
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": null,
+        "ci95": null,
+        "bootstrap_nonempty_draws": 0
+      }
+    },
+    {
+      "boundary": "lower->open",
+      "mechanism": "geometric",
+      "comparison": "cross_reverse",
+      "n_pairs": 160,
+      "n_query_episodes": 160,
+      "n_close_pairs": 0,
+      "n_inconsistent_close_pairs": 0,
+      "observation_distance_q25_median_q75": [
+        7.910006169673167,
+        8.13677437723822,
+        8.386233808241542
+      ],
+      "action_distance_q25_median_q75": [
+        2.0466023087501526,
+        2.061055541038513,
+        2.0762786865234375
+      ],
+      "guard_residual_m_q25_median_q75": [
+        -0.016467022300281308,
+        -0.015659037531811262,
+        -0.014902735072706747
+      ],
+      "close_neighbor_rate": {
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": null,
+        "ci95": null,
+        "bootstrap_nonempty_draws": 0
+      }
+    },
+    {
+      "boundary": "open->retreat_up",
+      "mechanism": "timed",
+      "comparison": "adjacent",
+      "n_pairs": 160,
+      "n_query_episodes": 160,
+      "n_close_pairs": 160,
+      "n_inconsistent_close_pairs": 160,
+      "observation_distance_q25_median_q75": [
+        6.716973605296065e-05,
+        6.933832528521788e-05,
+        7.094122502979404e-05
+      ],
+      "action_distance_q25_median_q75": [
+        0.9996084570884705,
+        0.9996596574783325,
+        0.999691054224968
+      ],
+      "guard_residual_m_q25_median_q75": null,
+      "close_neighbor_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      }
+    },
+    {
+      "boundary": "open->retreat_up",
+      "mechanism": "timed",
+      "comparison": "cross_forward",
+      "n_pairs": 160,
+      "n_query_episodes": 160,
+      "n_close_pairs": 88,
+      "n_inconsistent_close_pairs": 88,
+      "observation_distance_q25_median_q75": [
+        0.3827057632646989,
+        0.49130825721766835,
+        0.6196849449840769
+      ],
+      "action_distance_q25_median_q75": [
+        0.9996084570884705,
+        0.9996596574783325,
+        0.999691054224968
+      ],
+      "guard_residual_m_q25_median_q75": null,
+      "close_neighbor_rate": {
+        "value": 0.55,
+        "ci95": [
+          0.475,
+          0.625
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      }
+    },
+    {
+      "boundary": "open->retreat_up",
+      "mechanism": "timed",
+      "comparison": "cross_reverse",
+      "n_pairs": 160,
+      "n_query_episodes": 160,
+      "n_close_pairs": 88,
+      "n_inconsistent_close_pairs": 88,
+      "observation_distance_q25_median_q75": [
+        0.3827068501945369,
+        0.49130825721766835,
+        0.6196392300065446
+      ],
+      "action_distance_q25_median_q75": [
+        0.9996083825826645,
+        0.9996618032455444,
+        0.9996908903121948
+      ],
+      "guard_residual_m_q25_median_q75": null,
+      "close_neighbor_rate": {
+        "value": 0.55,
+        "ci95": [
+          0.475,
+          0.625
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      }
+    },
+    {
+      "boundary": "retreat_up->retreat_home",
+      "mechanism": "geometric",
+      "comparison": "adjacent",
+      "n_pairs": 160,
+      "n_query_episodes": 160,
+      "n_close_pairs": 143,
+      "n_inconsistent_close_pairs": 143,
+      "observation_distance_q25_median_q75": [
+        0.3241819169805288,
+        0.3751622215310721,
+        0.4270203877336676
+      ],
+      "action_distance_q25_median_q75": [
+        1.204706847667694,
+        1.5043092966079712,
+        1.510826051235199
+      ],
+      "guard_residual_m_q25_median_q75": [
+        -0.014035167872905718,
+        -0.013713183581829057,
+        -0.012982702583074556
+      ],
+      "close_neighbor_rate": {
+        "value": 0.89375,
+        "ci95": [
+          0.84375,
+          0.9375
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      }
+    },
+    {
+      "boundary": "retreat_up->retreat_home",
+      "mechanism": "geometric",
+      "comparison": "cross_forward",
+      "n_pairs": 160,
+      "n_query_episodes": 160,
+      "n_close_pairs": 33,
+      "n_inconsistent_close_pairs": 33,
+      "observation_distance_q25_median_q75": [
+        0.5389591673053464,
+        0.627543963101991,
+        0.7482471110374143
+      ],
+      "action_distance_q25_median_q75": [
+        1.2104793787002563,
+        1.5037490725517273,
+        1.510877251625061
+      ],
+      "guard_residual_m_q25_median_q75": [
+        -0.014035167872905718,
+        -0.013713183581829057,
+        -0.012982702583074556
+      ],
+      "close_neighbor_rate": {
+        "value": 0.20625,
+        "ci95": [
+          0.14375,
+          0.26875
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      }
+    },
+    {
+      "boundary": "retreat_up->retreat_home",
+      "mechanism": "geometric",
+      "comparison": "cross_reverse",
+      "n_pairs": 160,
+      "n_query_episodes": 160,
+      "n_close_pairs": 34,
+      "n_inconsistent_close_pairs": 34,
+      "observation_distance_q25_median_q75": [
+        0.527225610464909,
+        0.6294589529454552,
+        0.7523390742041142
+      ],
+      "action_distance_q25_median_q75": [
+        1.208448350429535,
+        1.5064771175384521,
+        1.5110207796096802
+      ],
+      "guard_residual_m_q25_median_q75": [
+        -0.014035167872905718,
+        -0.013713183581829057,
+        -0.012982702583074556
+      ],
+      "close_neighbor_rate": {
+        "value": 0.2125,
+        "ci95": [
+          0.15,
+          0.275
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      }
+    },
+    {
+      "boundary": "retreat_home->verify",
+      "mechanism": "geometric",
+      "comparison": "adjacent",
+      "n_pairs": 160,
+      "n_query_episodes": 160,
+      "n_close_pairs": 30,
+      "n_inconsistent_close_pairs": 0,
+      "observation_distance_q25_median_q75": [
+        0.8035192568128282,
+        1.5698321629809495,
+        1.7603121757393785
+      ],
+      "action_distance_q25_median_q75": [
+        0.06540982984006405,
+        0.11964802071452141,
+        0.2399059310555458
+      ],
+      "guard_residual_m_q25_median_q75": [
+        -0.02134741278491653,
+        -0.019066531102370284,
+        -0.011025752077427436
+      ],
+      "close_neighbor_rate": {
+        "value": 0.1875,
+        "ci95": [
+          0.125,
+          0.25
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "action_inconsistency_rate": {
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      }
+    },
+    {
+      "boundary": "retreat_home->verify",
+      "mechanism": "geometric",
+      "comparison": "cross_forward",
+      "n_pairs": 160,
+      "n_query_episodes": 160,
+      "n_close_pairs": 10,
+      "n_inconsistent_close_pairs": 0,
+      "observation_distance_q25_median_q75": [
+        1.0335242903757214,
+        1.6277246945314294,
+        1.7985055231034603
+      ],
+      "action_distance_q25_median_q75": [
+        0.06414543278515339,
+        0.09776235744357109,
+        0.21514149382710457
+      ],
+      "guard_residual_m_q25_median_q75": [
+        -0.02134741278491653,
+        -0.019066531102370284,
+        -0.011025752077427436
+      ],
+      "close_neighbor_rate": {
+        "value": 0.0625,
+        "ci95": [
+          0.025,
+          0.1
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "action_inconsistency_rate": {
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      }
+    },
+    {
+      "boundary": "retreat_home->verify",
+      "mechanism": "geometric",
+      "comparison": "cross_reverse",
+      "n_pairs": 160,
+      "n_query_episodes": 160,
+      "n_close_pairs": 12,
+      "n_inconsistent_close_pairs": 0,
+      "observation_distance_q25_median_q75": [
+        0.6616724725758518,
+        0.974021751365396,
+        1.2915668979650505
+      ],
+      "action_distance_q25_median_q75": [
+        0.05133327469229698,
+        0.05699137598276138,
+        0.07536935992538929
+      ],
+      "guard_residual_m_q25_median_q75": [
+        -0.02134741278491653,
+        -0.019066531102370284,
+        -0.011025752077427436
+      ],
+      "close_neighbor_rate": {
+        "value": 0.075,
+        "ci95": [
+          0.0375,
+          0.11875
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "action_inconsistency_rate": {
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_nonempty_draws": 2000
+      }
+    },
+    {
+      "boundary": "test_grasp->approach",
+      "mechanism": "timeout_and_failed_lift",
+      "comparison": "adjacent",
+      "n_pairs": 0,
+      "n_query_episodes": 0,
+      "n_close_pairs": 0,
+      "n_inconsistent_close_pairs": 0,
+      "observation_distance_q25_median_q75": null,
+      "action_distance_q25_median_q75": null,
+      "guard_residual_m_q25_median_q75": null,
+      "close_neighbor_rate": {
+        "value": null,
+        "ci95": null,
+        "bootstrap_nonempty_draws": 0
+      },
+      "action_inconsistency_rate": {
+        "value": null,
+        "ci95": null,
+        "bootstrap_nonempty_draws": 0
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": null,
+        "ci95": null,
+        "bootstrap_nonempty_draws": 0
+      }
+    },
+    {
+      "boundary": "test_grasp->approach",
+      "mechanism": "timeout_and_failed_lift",
+      "comparison": "cross_forward",
+      "n_pairs": 0,
+      "n_query_episodes": 0,
+      "n_close_pairs": 0,
+      "n_inconsistent_close_pairs": 0,
+      "observation_distance_q25_median_q75": null,
+      "action_distance_q25_median_q75": null,
+      "guard_residual_m_q25_median_q75": null,
+      "close_neighbor_rate": {
+        "value": null,
+        "ci95": null,
+        "bootstrap_nonempty_draws": 0
+      },
+      "action_inconsistency_rate": {
+        "value": null,
+        "ci95": null,
+        "bootstrap_nonempty_draws": 0
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": null,
+        "ci95": null,
+        "bootstrap_nonempty_draws": 0
+      }
+    },
+    {
+      "boundary": "test_grasp->approach",
+      "mechanism": "timeout_and_failed_lift",
+      "comparison": "cross_reverse",
+      "n_pairs": 0,
+      "n_query_episodes": 0,
+      "n_close_pairs": 0,
+      "n_inconsistent_close_pairs": 0,
+      "observation_distance_q25_median_q75": null,
+      "action_distance_q25_median_q75": null,
+      "guard_residual_m_q25_median_q75": null,
+      "close_neighbor_rate": {
+        "value": null,
+        "ci95": null,
+        "bootstrap_nonempty_draws": 0
+      },
+      "action_inconsistency_rate": {
+        "value": null,
+        "ci95": null,
+        "bootstrap_nonempty_draws": 0
+      },
+      "conditional_action_inconsistency_rate": {
+        "value": null,
+        "ci95": null,
+        "bootstrap_nonempty_draws": 0
+      }
+    }
+  ]
+}

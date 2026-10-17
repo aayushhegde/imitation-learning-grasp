@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Keep the original study records byte-for-byte so their checksums verify
+study_records/** -text

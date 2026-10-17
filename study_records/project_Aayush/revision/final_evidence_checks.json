@@ -1,0 +1,64 @@
+{
+  "status": "passed",
+  "summary_sha256": "1afebe0f98547ba912526655ff6dbf33294f4d4027330d8350005e2a4da76fb6",
+  "audit_script_sha256": "a9ca66ab2587d681769b6b39fd411703eeefa840eddc9b80d0f2553a38ec6107",
+  "result_files": [
+    {
+      "file": "mlp22_s0_eval_40000_100.json",
+      "sha256": "d22ee78d17cfcaf4b90c3c02016aaba4474b4245520919a126958cc742ef2ee0"
+    },
+    {
+      "file": "mlp22_s1_eval_40000_100.json",
+      "sha256": "99d30b416dc6f96da3bef0e004bebbc15b965d30c63e9d2c8e0c900a1b31050d"
+    },
+    {
+      "file": "mlp22_s2_eval_40000_100.json",
+      "sha256": "0843cf7f03d680fa9b689c143a5bb0ed8eb97ed24504a8faeda2b187720c28c1"
+    },
+    {
+      "file": "gru33_s0_eval_40000_100.json",
+      "sha256": "384154f70ad8ed377349ba93d83f06ff24fff5e72ef42ad8884d025861e4a47f"
+    },
+    {
+      "file": "gru33_s1_eval_40000_100.json",
+      "sha256": "911d7b2187815b14038bf8c9350cfbab41bccb907c3d7c32b12dd10ba197f457"
+    },
+    {
+      "file": "gru33_s2_eval_40000_100.json",
+      "sha256": "95e992f7ea15d2346947b72f8aa9aac810037aef3712c6b39b2c0b17a4c140d8"
+    },
+    {
+      "file": "gru33_floor_s0_eval_40000_100.json",
+      "sha256": "1cc4cde1ef3a68217b05990b2bcb0facf810d31c0a64da2dab31d59ccb1095df"
+    },
+    {
+      "file": "gru33_floor_s1_eval_40000_100.json",
+      "sha256": "107fd4e1a5d2f89db73c207225a4171b4d46935e8eec0c6ee91efa28f0e2a6d3"
+    },
+    {
+      "file": "gru33_floor_s2_eval_40000_100.json",
+      "sha256": "2eb383b6f2c7b2c1556075f27cf2bbcead7fe849c7c3c4199b10e846471dc949"
+    },
+    {
+      "file": "mlp33_floor_s0_eval_40000_100.json",
+      "sha256": "d57faabfcfeed2f778e402762eaf030bad2a48b4e3dcc901a6df9e7339a437b4"
+    },
+    {
+      "file": "mlp33_floor_s1_eval_40000_100.json",
+      "sha256": "634c052019856ccd0a5e8775023cd7852186f648a097c9061d58a21b8ceaf4ce"
+    },
+    {
+      "file": "mlp33_floor_s2_eval_40000_100.json",
+      "sha256": "63dc22d960b67edf424e93142f5b6713c5623fc41b8c66151865a25e9fd1a809"
+    },
+    {
+      "file": "expert_s0_eval_40000_100.json",
+      "sha256": "56abdc0356b61a25d861d7a452365bb06216b7e97666891e2c078b87aaef7210"
+    }
+  ],
+  "episode_traces_checked": 1300,
+  "commands_checked": 149874,
+  "seed_aggregates_checked": 4,
+  "paired_tests_checked": 9,
+  "scope_limit": "No training or simulator rerun; collision penetration uses retained simulator contact flags; excludes exploratory DAgger"
+}

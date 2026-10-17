@@ -1,0 +1,86 @@
+{
+  "all_historical_record_fields_exact_match": true,
+  "historical_records_compared": 120,
+  "historical_fields_per_record": 31,
+  "full_record_differences": [],
+  "expert_history_action_comparison": {
+    "equal": 1742,
+    "different": 497,
+    "max_abs_component_difference": 1.0,
+    "samples_above_1e-6": 377,
+    "samples_above_1e-4": 377,
+    "different_with_numpy_default_rtol1e-5_atol1e-8": 377,
+    "by_phase": {
+      "approach": {
+        "samples": 194,
+        "above_1e-8": 17,
+        "above_1e-6": 17
+      },
+      "descend": {
+        "samples": 172
+      },
+      "close": {
+        "samples": 300
+      },
+      "test_grasp": {
+        "samples": 95
+      },
+      "lift_clear": {
+        "samples": 150,
+        "above_1e-8": 60
+      },
+      "pre_cross": {
+        "samples": 122
+      },
+      "cross_barrier": {
+        "samples": 150
+      },
+      "above_goal": {
+        "samples": 114
+      },
+      "lower": {
+        "samples": 120
+      },
+      "open": {
+        "samples": 360,
+        "above_1e-8": 360,
+        "above_1e-6": 360
+      },
+      "retreat_up": {
+        "samples": 180,
+        "above_1e-8": 60
+      },
+      "retreat_home": {
+        "samples": 161
+      },
+      "verify": {
+        "samples": 121
+      }
+    }
+  },
+  "first_action_difference": {
+    "seed": 2000,
+    "pre_step": 27,
+    "executed_step": 28,
+    "label_phase": "lift_clear",
+    "proposed_action": [
+      0.0,
+      0.0,
+      0.504404604434967,
+      -1.0
+    ],
+    "actual_action": [
+      0.0,
+      0.0,
+      0.5044045448303223,
+      -1.0
+    ],
+    "oracle_action_max_abs_difference": 5.960464477539063e-08
+  },
+  "release_target_difference_seed_count": 30,
+  "max_release_target_component_difference_m": 0.020346242003142834,
+  "all_perturbations_three_consecutive_executed_steps": true,
+  "portable_script_sha256": "c6ed684c6ff591eabb162ac5cd200f2c0b1f4e955c5448e3fceb8c99f9113fe1",
+  "original_executed_script_sha256": "75c0b78499fdeb187431514996ba12b122288f95fdf375d0454f6a0d4bf24f84",
+  "portability_note": "replay_oracle_validation.py differs from original_executed_script.py only by CLI repo/output setup and guards against historical or existing diagnostic output. --output is required. Original execution hash remains in diagnostic_manifest.json."
+}

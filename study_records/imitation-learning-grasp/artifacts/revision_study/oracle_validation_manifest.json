@@ -1,0 +1,65 @@
+{
+  "reset_mode": "independent",
+  "seeds": [
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026,
+    2027,
+    2028,
+    2029
+  ],
+  "oracle_sha256": "2bedbae95ae6013246b0ccbe42b5fcfa8d32cebf0438d48214d02b2f4dedeee0",
+  "probe_definitions": {
+    "oracle": "Teacher executes every proposed action",
+    "transport_perturbation": "Replace first three CROSS_BARRIER actions with [0.3,-0.2,0,-1]",
+    "open_during_close": "Replace first three CLOSE actions with [0,0,0,1]",
+    "expert_history": "Execute the original VerifiedPickPlaceExpert and compare synchronized oracle phases"
+  },
+  "summary": {
+    "expert_history": {
+      "episodes": 30,
+      "strict_successes": 30,
+      "abstentions": 0
+    },
+    "open_during_close": {
+      "episodes": 30,
+      "strict_successes": 30,
+      "abstentions": 0
+    },
+    "oracle": {
+      "episodes": 30,
+      "strict_successes": 30,
+      "abstentions": 0
+    },
+    "transport_perturbation": {
+      "episodes": 30,
+      "strict_successes": 30,
+      "abstentions": 0
+    }
+  },
+  "scope": "Finite development probes, not a guarantee for arbitrary learner states"
+}
